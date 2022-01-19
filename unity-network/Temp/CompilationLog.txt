@@ -1,170 +1,84 @@
 # Starting compiling UnityEngine.TestRunner.dll
-/Applications/Unity/Hub/Editor/2020.3.1f1/Unity.app/Contents/Tools/RoslynScripts/unity_csc.sh /noconfig @Temp/UnityTempFile-7a3f0754edaaa4f30a95f215948d849b
+/Applications/Unity/Hub/Editor/2020.3.1f1/Unity.app/Contents/Tools/RoslynScripts/unity_csc.sh /noconfig @Temp/UnityTempFile-9cdb2f16105ab48c89a1c398d1ba01b6
 # Starting compiling UnityEngine.UI.dll
-/Applications/Unity/Hub/Editor/2020.3.1f1/Unity.app/Contents/Tools/RoslynScripts/unity_csc.sh /noconfig @Temp/UnityTempFile-8143b7f4eb63a4547a82f4c33c1ecd22
-# Starting compiling UnityEditor.TestRunner.dll
-/Applications/Unity/Hub/Editor/2020.3.1f1/Unity.app/Contents/Tools/RoslynScripts/unity_csc.sh /noconfig @Temp/UnityTempFile-6ff4ec7e20b8e4e56b6fded33862b401
-# Starting compiling UnityEditor.UI.dll
-/Applications/Unity/Hub/Editor/2020.3.1f1/Unity.app/Contents/Tools/RoslynScripts/unity_csc.sh /noconfig @Temp/UnityTempFile-81eb22c21453d4852af725ccac54f3fa
-# Starting compiling Unity.InternalAPIEngineBridge.001.dll
-/Applications/Unity/Hub/Editor/2020.3.1f1/Unity.app/Contents/Tools/RoslynScripts/unity_csc.sh /noconfig @Temp/UnityTempFile-ba750be4b0fb94fcfb598c538331ddc9
-# Starting compiling Unity.VSCode.Editor.dll
-/Applications/Unity/Hub/Editor/2020.3.1f1/Unity.app/Contents/Tools/RoslynScripts/unity_csc.sh /noconfig @Temp/UnityTempFile-dd1b0b0a211d748508f8345e7f7bcc07
-# Starting compiling Unity.2D.PixelPerfect.dll
-/Applications/Unity/Hub/Editor/2020.3.1f1/Unity.app/Contents/Tools/RoslynScripts/unity_csc.sh /noconfig @Temp/UnityTempFile-33ff964ba589b44098bd919cd96c557b
-# Starting compiling Unity.2D.Tilemap.Editor.dll
-/Applications/Unity/Hub/Editor/2020.3.1f1/Unity.app/Contents/Tools/RoslynScripts/unity_csc.sh /noconfig @Temp/UnityTempFile-f7a9b00c5802742f4822a4bdd23adf57
-# Starting compiling PsdPlugin.dll
-/Applications/Unity/Hub/Editor/2020.3.1f1/Unity.app/Contents/Tools/RoslynScripts/unity_csc.sh /noconfig @Temp/UnityTempFile-6de5e304e6b6a4ce487f25f1cb572433
-# Starting compiling Unity.VisualStudio.Editor.dll
-/Applications/Unity/Hub/Editor/2020.3.1f1/Unity.app/Contents/Tools/RoslynScripts/unity_csc.sh /noconfig @Temp/UnityTempFile-a6422b657d7e04d7bb05880095cd8a9f
-# Starting compiling Unity.Timeline.dll
-/Applications/Unity/Hub/Editor/2020.3.1f1/Unity.app/Contents/Tools/RoslynScripts/unity_csc.sh /noconfig @Temp/UnityTempFile-03ed1d6603203493f9dbecbe43858d4c
-# Starting compiling Unity.TextMeshPro.dll
-/Applications/Unity/Hub/Editor/2020.3.1f1/Unity.app/Contents/Tools/RoslynScripts/unity_csc.sh /noconfig @Temp/UnityTempFile-6d43273aa24a043d09d5eabe2f063222
-# Starting compiling Unity.2D.Sprite.Editor.dll
-/Applications/Unity/Hub/Editor/2020.3.1f1/Unity.app/Contents/Tools/RoslynScripts/unity_csc.sh /noconfig @Temp/UnityTempFile-51d9360695c694ad9b2d26a7a7c4053b
-# Starting compiling Unity.2D.Path.Editor.dll
-/Applications/Unity/Hub/Editor/2020.3.1f1/Unity.app/Contents/Tools/RoslynScripts/unity_csc.sh /noconfig @Temp/UnityTempFile-b13ddff9656d54026ad1721bd09dc2c9
-# Starting compiling Unity.Rider.Editor.dll
-/Applications/Unity/Hub/Editor/2020.3.1f1/Unity.app/Contents/Tools/RoslynScripts/unity_csc.sh /noconfig @Temp/UnityTempFile-8498ec675e78f468c9df050ab670dda7
-# Starting compiling Unity.Mathematics.dll
-/Applications/Unity/Hub/Editor/2020.3.1f1/Unity.app/Contents/Tools/RoslynScripts/unity_csc.sh /noconfig @Temp/UnityTempFile-ad5395dbadf5c4916aded497984c37f5
-# Starting compiling Unity.2D.IK.Runtime.dll
-/Applications/Unity/Hub/Editor/2020.3.1f1/Unity.app/Contents/Tools/RoslynScripts/unity_csc.sh /noconfig @Temp/UnityTempFile-53beaac99a14f4f9282c02fa68be3886
-# Starting compiling Unity.2D.Animation.Triangle.Runtime.dll
-/Applications/Unity/Hub/Editor/2020.3.1f1/Unity.app/Contents/Tools/RoslynScripts/unity_csc.sh /noconfig @Temp/UnityTempFile-8a2c48924d9e3474086bae3838211b9c
-# Starting compiling Unity.CollabProxy.Editor.dll
-/Applications/Unity/Hub/Editor/2020.3.1f1/Unity.app/Contents/Tools/RoslynScripts/unity_csc.sh /noconfig @Temp/UnityTempFile-027e242c7a6404188931ca12ce1a4c46
-# Starting compiling Unity.2D.Common.Runtime.dll
-/Applications/Unity/Hub/Editor/2020.3.1f1/Unity.app/Contents/Tools/RoslynScripts/unity_csc.sh /noconfig @Temp/UnityTempFile-9067cf1f24ccd450191d860fe6083a58
-# Starting compiling Unity.2D.PixelPerfect.Editor.dll
-/Applications/Unity/Hub/Editor/2020.3.1f1/Unity.app/Contents/Tools/RoslynScripts/unity_csc.sh /noconfig @Temp/UnityTempFile-40514e781c74e4309a574de869ec8daf
-# Starting compiling Mirror.CompilerSymbols.dll
-/Applications/Unity/Hub/Editor/2020.3.1f1/Unity.app/Contents/Tools/RoslynScripts/unity_csc.sh /noconfig @Temp/UnityTempFile-7bab8b3149e294dd78a93fdf3c73f6cf
-# Starting compiling Telepathy.dll
-/Applications/Unity/Hub/Editor/2020.3.1f1/Unity.app/Contents/Tools/RoslynScripts/unity_csc.sh /noconfig @Temp/UnityTempFile-146baae9f79ed4e088e678428554178b
-# Starting compiling where-allocations.dll
-/Applications/Unity/Hub/Editor/2020.3.1f1/Unity.app/Contents/Tools/RoslynScripts/unity_csc.sh /noconfig @Temp/UnityTempFile-feb82513a24a14f9c8d896a514514244
-# Starting compiling Unity.InternalAPIEditorBridge.001.dll
-/Applications/Unity/Hub/Editor/2020.3.1f1/Unity.app/Contents/Tools/RoslynScripts/unity_csc.sh /noconfig @Temp/UnityTempFile-006f13e75113b4c44865694249e70307
-# Starting compiling Unity.Timeline.Editor.dll
-/Applications/Unity/Hub/Editor/2020.3.1f1/Unity.app/Contents/Tools/RoslynScripts/unity_csc.sh /noconfig @Temp/UnityTempFile-501b756b322874d81a01e52daa2be10c
-# Starting compiling Unity.2D.Common.Editor.dll
-/Applications/Unity/Hub/Editor/2020.3.1f1/Unity.app/Contents/Tools/RoslynScripts/unity_csc.sh /noconfig @Temp/UnityTempFile-5c3574888d9324576a9c1286141d9118
-# Starting compiling kcp2k.dll
-/Applications/Unity/Hub/Editor/2020.3.1f1/Unity.app/Contents/Tools/RoslynScripts/unity_csc.sh /noconfig @Temp/UnityTempFile-5a8427ec627c5458b9d5fc3af3eb2207
-# Starting compiling Unity.TextMeshPro.Editor.dll
-/Applications/Unity/Hub/Editor/2020.3.1f1/Unity.app/Contents/Tools/RoslynScripts/unity_csc.sh /noconfig @Temp/UnityTempFile-6b270f7e3ccc4440dbf3d21ea646b7b2
-# Starting compiling Mirror.dll
-/Applications/Unity/Hub/Editor/2020.3.1f1/Unity.app/Contents/Tools/RoslynScripts/unity_csc.sh /noconfig @Temp/UnityTempFile-e2781951f324a4033a1cb85ce8887269
-# Starting compiling Unity.Mirror.CodeGen.dll
-/Applications/Unity/Hub/Editor/2020.3.1f1/Unity.app/Contents/Tools/RoslynScripts/unity_csc.sh /noconfig @Temp/UnityTempFile-c71c1a79e1f564828856114dcf6d96e9
-# Starting compiling Unity.2D.Animation.Runtime.dll
-/Applications/Unity/Hub/Editor/2020.3.1f1/Unity.app/Contents/Tools/RoslynScripts/unity_csc.sh /noconfig @Temp/UnityTempFile-5cc5d3df3c1cc41f89a72969c5494267
-# Starting compiling Unity.Mathematics.Editor.dll
-/Applications/Unity/Hub/Editor/2020.3.1f1/Unity.app/Contents/Tools/RoslynScripts/unity_csc.sh /noconfig @Temp/UnityTempFile-e1a59b3b6578d467dba387590be40810
-# Starting compiling Mirror.Authenticators.dll
-/Applications/Unity/Hub/Editor/2020.3.1f1/Unity.app/Contents/Tools/RoslynScripts/unity_csc.sh /noconfig @Temp/UnityTempFile-1311c20182ad6499bb416052a294c798
-# Starting compiling SimpleWebTransport.dll
-/Applications/Unity/Hub/Editor/2020.3.1f1/Unity.app/Contents/Tools/RoslynScripts/unity_csc.sh /noconfig @Temp/UnityTempFile-d88f9b77a5d6945f0b40033ab0d9eb2e
-# Starting compiling Unity.2D.SpriteShape.Runtime.dll
-/Applications/Unity/Hub/Editor/2020.3.1f1/Unity.app/Contents/Tools/RoslynScripts/unity_csc.sh /noconfig @Temp/UnityTempFile-f74a4918bffe94ea9ada5116559fe8b2
-# Starting compiling Mirror.Components.dll
-/Applications/Unity/Hub/Editor/2020.3.1f1/Unity.app/Contents/Tools/RoslynScripts/unity_csc.sh /noconfig @Temp/UnityTempFile-ee430df6f26404224b815b641c57560e
-# Starting compiling Mirror.Editor.dll
-/Applications/Unity/Hub/Editor/2020.3.1f1/Unity.app/Contents/Tools/RoslynScripts/unity_csc.sh /noconfig @Temp/UnityTempFile-07a651f0f95f94782aea358a41bcc28c
-# Starting compiling Unity.2D.Animation.Editor.dll
-/Applications/Unity/Hub/Editor/2020.3.1f1/Unity.app/Contents/Tools/RoslynScripts/unity_csc.sh /noconfig @Temp/UnityTempFile-7b6f4589327eb4571b5a731ac5fc441d
-# Starting compiling Mirror.Examples.dll
-/Applications/Unity/Hub/Editor/2020.3.1f1/Unity.app/Contents/Tools/RoslynScripts/unity_csc.sh /noconfig @Temp/UnityTempFile-1647fabaccd1749edb2dc16c543a71f5
-# Starting compiling Unity.2D.SpriteShape.Editor.dll
-/Applications/Unity/Hub/Editor/2020.3.1f1/Unity.app/Contents/Tools/RoslynScripts/unity_csc.sh /noconfig @Temp/UnityTempFile-19377d6ecf7574f30b80c8a9b4d0d6c9
+/Applications/Unity/Hub/Editor/2020.3.1f1/Unity.app/Contents/Tools/RoslynScripts/unity_csc.sh /noconfig @Temp/UnityTempFile-dd4475d0e33ff4ea880beea04051b2ef
 # Starting IL post processing on UnityEngine.TestRunner.dll
-/Applications/Unity/Hub/Editor/2020.3.1f1/Unity.app/Contents/MonoBleedingEdge/bin/mono "/Applications/Unity/Hub/Editor/2020.3.1f1/Unity.app/Contents/Tools/ILPostProcessorRunner/ILPostProcessorRunner.exe" @"/Users/alexandre/delivery/epitech/unity-network/unity-network/unity-network/Temp/UnityTempFile-082b0365738e14150a1f1ff1679746fb"
+/Applications/Unity/Hub/Editor/2020.3.1f1/Unity.app/Contents/MonoBleedingEdge/bin/mono "/Applications/Unity/Hub/Editor/2020.3.1f1/Unity.app/Contents/Tools/ILPostProcessorRunner/ILPostProcessorRunner.exe" @"/Users/alexandre/delivery/epitech/unity-network/unity-network/unity-network/Temp/UnityTempFile-b1a135211ed4e4bf5b46a343fb9ef674"
 # Starting IL post processing on UnityEngine.UI.dll
-/Applications/Unity/Hub/Editor/2020.3.1f1/Unity.app/Contents/MonoBleedingEdge/bin/mono "/Applications/Unity/Hub/Editor/2020.3.1f1/Unity.app/Contents/Tools/ILPostProcessorRunner/ILPostProcessorRunner.exe" @"/Users/alexandre/delivery/epitech/unity-network/unity-network/unity-network/Temp/UnityTempFile-03d7a98d770134a8cbe0ca87e34c22f8"
-# Starting IL post processing on UnityEditor.TestRunner.dll
-/Applications/Unity/Hub/Editor/2020.3.1f1/Unity.app/Contents/MonoBleedingEdge/bin/mono "/Applications/Unity/Hub/Editor/2020.3.1f1/Unity.app/Contents/Tools/ILPostProcessorRunner/ILPostProcessorRunner.exe" @"/Users/alexandre/delivery/epitech/unity-network/unity-network/unity-network/Temp/UnityTempFile-052461f5fac26432c8e13410f6a1efad"
-# Starting IL post processing on UnityEditor.UI.dll
-/Applications/Unity/Hub/Editor/2020.3.1f1/Unity.app/Contents/MonoBleedingEdge/bin/mono "/Applications/Unity/Hub/Editor/2020.3.1f1/Unity.app/Contents/Tools/ILPostProcessorRunner/ILPostProcessorRunner.exe" @"/Users/alexandre/delivery/epitech/unity-network/unity-network/unity-network/Temp/UnityTempFile-1c5e747a99f2e4e32ac96c1c586161a2"
+/Applications/Unity/Hub/Editor/2020.3.1f1/Unity.app/Contents/MonoBleedingEdge/bin/mono "/Applications/Unity/Hub/Editor/2020.3.1f1/Unity.app/Contents/Tools/ILPostProcessorRunner/ILPostProcessorRunner.exe" @"/Users/alexandre/delivery/epitech/unity-network/unity-network/unity-network/Temp/UnityTempFile-d3ee9e1e0280c4ca3b55f4839be690e2"
+# Starting compiling Unity.InternalAPIEngineBridge.001.dll
+/Applications/Unity/Hub/Editor/2020.3.1f1/Unity.app/Contents/Tools/RoslynScripts/unity_csc.sh /noconfig @Temp/UnityTempFile-203429245716d4282b01f226f2676869
+# Starting compiling Unity.2D.PixelPerfect.dll
+/Applications/Unity/Hub/Editor/2020.3.1f1/Unity.app/Contents/Tools/RoslynScripts/unity_csc.sh /noconfig @Temp/UnityTempFile-b2977d4d21d4e447f850fbc57cca1e12
+# Starting compiling Unity.Timeline.dll
+/Applications/Unity/Hub/Editor/2020.3.1f1/Unity.app/Contents/Tools/RoslynScripts/unity_csc.sh /noconfig @Temp/UnityTempFile-531df9db72e59488c98aa624a82e8187
+# Starting compiling Unity.TextMeshPro.dll
+/Applications/Unity/Hub/Editor/2020.3.1f1/Unity.app/Contents/Tools/RoslynScripts/unity_csc.sh /noconfig @Temp/UnityTempFile-a52a080da66fb400e890f82e1e603e28
+# Starting compiling Unity.Mathematics.dll
+/Applications/Unity/Hub/Editor/2020.3.1f1/Unity.app/Contents/Tools/RoslynScripts/unity_csc.sh /noconfig @Temp/UnityTempFile-e918d9c0396bc4c0a871323ac347394a
+# Starting compiling Unity.2D.IK.Runtime.dll
+/Applications/Unity/Hub/Editor/2020.3.1f1/Unity.app/Contents/Tools/RoslynScripts/unity_csc.sh /noconfig @Temp/UnityTempFile-1b85fe6cbdae548a59c8bf33a73171e0
+# Starting compiling Unity.2D.Animation.Triangle.Runtime.dll
+/Applications/Unity/Hub/Editor/2020.3.1f1/Unity.app/Contents/Tools/RoslynScripts/unity_csc.sh /noconfig @Temp/UnityTempFile-29e1feec3050d4023884b09205efa234
+# Starting compiling Unity.2D.Common.Runtime.dll
+/Applications/Unity/Hub/Editor/2020.3.1f1/Unity.app/Contents/Tools/RoslynScripts/unity_csc.sh /noconfig @Temp/UnityTempFile-3c3e2ec2b8bb44cb59916d804db5bb77
+# Starting compiling Telepathy.dll
+/Applications/Unity/Hub/Editor/2020.3.1f1/Unity.app/Contents/Tools/RoslynScripts/unity_csc.sh /noconfig @Temp/UnityTempFile-6d79c613825c74b04be9bcd3946fb205
+# Starting compiling where-allocations.dll
+/Applications/Unity/Hub/Editor/2020.3.1f1/Unity.app/Contents/Tools/RoslynScripts/unity_csc.sh /noconfig @Temp/UnityTempFile-f1505e112c53a4033a13bf1f63c810db
 # Starting IL post processing on Unity.InternalAPIEngineBridge.001.dll
-/Applications/Unity/Hub/Editor/2020.3.1f1/Unity.app/Contents/MonoBleedingEdge/bin/mono "/Applications/Unity/Hub/Editor/2020.3.1f1/Unity.app/Contents/Tools/ILPostProcessorRunner/ILPostProcessorRunner.exe" @"/Users/alexandre/delivery/epitech/unity-network/unity-network/unity-network/Temp/UnityTempFile-cb4ce76d8e3d24bd983d71dcf3d90b79"
+/Applications/Unity/Hub/Editor/2020.3.1f1/Unity.app/Contents/MonoBleedingEdge/bin/mono "/Applications/Unity/Hub/Editor/2020.3.1f1/Unity.app/Contents/Tools/ILPostProcessorRunner/ILPostProcessorRunner.exe" @"/Users/alexandre/delivery/epitech/unity-network/unity-network/unity-network/Temp/UnityTempFile-4b6f7432073724cff9c9cd7eabcc44f3"
 # Starting IL post processing on Unity.2D.PixelPerfect.dll
-/Applications/Unity/Hub/Editor/2020.3.1f1/Unity.app/Contents/MonoBleedingEdge/bin/mono "/Applications/Unity/Hub/Editor/2020.3.1f1/Unity.app/Contents/Tools/ILPostProcessorRunner/ILPostProcessorRunner.exe" @"/Users/alexandre/delivery/epitech/unity-network/unity-network/unity-network/Temp/UnityTempFile-496e1f4b8ca4947a9922b60640488288"
-# Starting IL post processing on Unity.2D.Tilemap.Editor.dll
-/Applications/Unity/Hub/Editor/2020.3.1f1/Unity.app/Contents/MonoBleedingEdge/bin/mono "/Applications/Unity/Hub/Editor/2020.3.1f1/Unity.app/Contents/Tools/ILPostProcessorRunner/ILPostProcessorRunner.exe" @"/Users/alexandre/delivery/epitech/unity-network/unity-network/unity-network/Temp/UnityTempFile-34e41d4992a9747b5b439ad670a345d7"
-# Starting IL post processing on Unity.VSCode.Editor.dll
-/Applications/Unity/Hub/Editor/2020.3.1f1/Unity.app/Contents/MonoBleedingEdge/bin/mono "/Applications/Unity/Hub/Editor/2020.3.1f1/Unity.app/Contents/Tools/ILPostProcessorRunner/ILPostProcessorRunner.exe" @"/Users/alexandre/delivery/epitech/unity-network/unity-network/unity-network/Temp/UnityTempFile-5ae4532ea082645ca9a19fbeef4b43b8"
-# Starting IL post processing on PsdPlugin.dll
-/Applications/Unity/Hub/Editor/2020.3.1f1/Unity.app/Contents/MonoBleedingEdge/bin/mono "/Applications/Unity/Hub/Editor/2020.3.1f1/Unity.app/Contents/Tools/ILPostProcessorRunner/ILPostProcessorRunner.exe" @"/Users/alexandre/delivery/epitech/unity-network/unity-network/unity-network/Temp/UnityTempFile-008781103411e4f3398d9d6ac3c9c94c"
-# Starting IL post processing on Unity.VisualStudio.Editor.dll
-/Applications/Unity/Hub/Editor/2020.3.1f1/Unity.app/Contents/MonoBleedingEdge/bin/mono "/Applications/Unity/Hub/Editor/2020.3.1f1/Unity.app/Contents/Tools/ILPostProcessorRunner/ILPostProcessorRunner.exe" @"/Users/alexandre/delivery/epitech/unity-network/unity-network/unity-network/Temp/UnityTempFile-fbe1d4155311d425d95b028d58874cd1"
-# Starting IL post processing on Unity.2D.IK.Runtime.dll
-/Applications/Unity/Hub/Editor/2020.3.1f1/Unity.app/Contents/MonoBleedingEdge/bin/mono "/Applications/Unity/Hub/Editor/2020.3.1f1/Unity.app/Contents/Tools/ILPostProcessorRunner/ILPostProcessorRunner.exe" @"/Users/alexandre/delivery/epitech/unity-network/unity-network/unity-network/Temp/UnityTempFile-bfda38695b05f40f48ddd365fbb70d70"
-# Starting IL post processing on Mirror.CompilerSymbols.dll
-/Applications/Unity/Hub/Editor/2020.3.1f1/Unity.app/Contents/MonoBleedingEdge/bin/mono "/Applications/Unity/Hub/Editor/2020.3.1f1/Unity.app/Contents/Tools/ILPostProcessorRunner/ILPostProcessorRunner.exe" @"/Users/alexandre/delivery/epitech/unity-network/unity-network/unity-network/Temp/UnityTempFile-f78b2ee065f1e43b598ce5ea6bbb9b6c"
-# Starting IL post processing on Unity.Timeline.dll
-/Applications/Unity/Hub/Editor/2020.3.1f1/Unity.app/Contents/MonoBleedingEdge/bin/mono "/Applications/Unity/Hub/Editor/2020.3.1f1/Unity.app/Contents/Tools/ILPostProcessorRunner/ILPostProcessorRunner.exe" @"/Users/alexandre/delivery/epitech/unity-network/unity-network/unity-network/Temp/UnityTempFile-5d037236402e54352a329ce11414dc3a"
-# Starting IL post processing on Unity.2D.Sprite.Editor.dll
-/Applications/Unity/Hub/Editor/2020.3.1f1/Unity.app/Contents/MonoBleedingEdge/bin/mono "/Applications/Unity/Hub/Editor/2020.3.1f1/Unity.app/Contents/Tools/ILPostProcessorRunner/ILPostProcessorRunner.exe" @"/Users/alexandre/delivery/epitech/unity-network/unity-network/unity-network/Temp/UnityTempFile-d294cdb74268a437889a182c2ac681aa"
-# Starting IL post processing on Unity.2D.Path.Editor.dll
-/Applications/Unity/Hub/Editor/2020.3.1f1/Unity.app/Contents/MonoBleedingEdge/bin/mono "/Applications/Unity/Hub/Editor/2020.3.1f1/Unity.app/Contents/Tools/ILPostProcessorRunner/ILPostProcessorRunner.exe" @"/Users/alexandre/delivery/epitech/unity-network/unity-network/unity-network/Temp/UnityTempFile-f02c1ffa3a4ca4901931d95d9eafe622"
-# Starting IL post processing on Unity.Rider.Editor.dll
-/Applications/Unity/Hub/Editor/2020.3.1f1/Unity.app/Contents/MonoBleedingEdge/bin/mono "/Applications/Unity/Hub/Editor/2020.3.1f1/Unity.app/Contents/Tools/ILPostProcessorRunner/ILPostProcessorRunner.exe" @"/Users/alexandre/delivery/epitech/unity-network/unity-network/unity-network/Temp/UnityTempFile-dd90bb47b53b344e2ac45db9f53f3bc6"
-# Starting compiling Unity.2D.IK.Editor.dll
-/Applications/Unity/Hub/Editor/2020.3.1f1/Unity.app/Contents/Tools/RoslynScripts/unity_csc.sh /noconfig @Temp/UnityTempFile-ef49750bf5586499e893fae76690f138
-# Starting compiling Unity.2D.Psdimporter.Editor.dll
-/Applications/Unity/Hub/Editor/2020.3.1f1/Unity.app/Contents/Tools/RoslynScripts/unity_csc.sh /noconfig @Temp/UnityTempFile-15e692a6b7ea24c3c9548f3acdd05517
+/Applications/Unity/Hub/Editor/2020.3.1f1/Unity.app/Contents/MonoBleedingEdge/bin/mono "/Applications/Unity/Hub/Editor/2020.3.1f1/Unity.app/Contents/Tools/ILPostProcessorRunner/ILPostProcessorRunner.exe" @"/Users/alexandre/delivery/epitech/unity-network/unity-network/unity-network/Temp/UnityTempFile-1384d43c3cdc44c519d92f8515068293"
 # Starting IL post processing on Unity.2D.Common.Runtime.dll
-/Applications/Unity/Hub/Editor/2020.3.1f1/Unity.app/Contents/MonoBleedingEdge/bin/mono "/Applications/Unity/Hub/Editor/2020.3.1f1/Unity.app/Contents/Tools/ILPostProcessorRunner/ILPostProcessorRunner.exe" @"/Users/alexandre/delivery/epitech/unity-network/unity-network/unity-network/Temp/UnityTempFile-3fe3454f8ee184a57a9251a3c4e178dd"
-# Starting IL post processing on Unity.2D.PixelPerfect.Editor.dll
-/Applications/Unity/Hub/Editor/2020.3.1f1/Unity.app/Contents/MonoBleedingEdge/bin/mono "/Applications/Unity/Hub/Editor/2020.3.1f1/Unity.app/Contents/Tools/ILPostProcessorRunner/ILPostProcessorRunner.exe" @"/Users/alexandre/delivery/epitech/unity-network/unity-network/unity-network/Temp/UnityTempFile-4cf30bc113e5b4e51acb983cc285b91b"
+/Applications/Unity/Hub/Editor/2020.3.1f1/Unity.app/Contents/MonoBleedingEdge/bin/mono "/Applications/Unity/Hub/Editor/2020.3.1f1/Unity.app/Contents/Tools/ILPostProcessorRunner/ILPostProcessorRunner.exe" @"/Users/alexandre/delivery/epitech/unity-network/unity-network/unity-network/Temp/UnityTempFile-d84ac695663d44ad28b5878f076238e8"
+# Starting IL post processing on Unity.2D.IK.Runtime.dll
+/Applications/Unity/Hub/Editor/2020.3.1f1/Unity.app/Contents/MonoBleedingEdge/bin/mono "/Applications/Unity/Hub/Editor/2020.3.1f1/Unity.app/Contents/Tools/ILPostProcessorRunner/ILPostProcessorRunner.exe" @"/Users/alexandre/delivery/epitech/unity-network/unity-network/unity-network/Temp/UnityTempFile-25881c0ca813a40e0ae07731c512bc23"
 # Starting IL post processing on Telepathy.dll
-/Applications/Unity/Hub/Editor/2020.3.1f1/Unity.app/Contents/MonoBleedingEdge/bin/mono "/Applications/Unity/Hub/Editor/2020.3.1f1/Unity.app/Contents/Tools/ILPostProcessorRunner/ILPostProcessorRunner.exe" @"/Users/alexandre/delivery/epitech/unity-network/unity-network/unity-network/Temp/UnityTempFile-5d6f1cafc4e0544c39725a7047e4e6df"
-# Starting IL post processing on Unity.2D.Animation.Triangle.Runtime.dll
-/Applications/Unity/Hub/Editor/2020.3.1f1/Unity.app/Contents/MonoBleedingEdge/bin/mono "/Applications/Unity/Hub/Editor/2020.3.1f1/Unity.app/Contents/Tools/ILPostProcessorRunner/ILPostProcessorRunner.exe" @"/Users/alexandre/delivery/epitech/unity-network/unity-network/unity-network/Temp/UnityTempFile-a95d7676d0bd3414e965b19685a08696"
-# Starting IL post processing on Unity.CollabProxy.Editor.dll
-/Applications/Unity/Hub/Editor/2020.3.1f1/Unity.app/Contents/MonoBleedingEdge/bin/mono "/Applications/Unity/Hub/Editor/2020.3.1f1/Unity.app/Contents/Tools/ILPostProcessorRunner/ILPostProcessorRunner.exe" @"/Users/alexandre/delivery/epitech/unity-network/unity-network/unity-network/Temp/UnityTempFile-ec304522073534f4f986a30ebf603032"
-# Starting IL post processing on Unity.TextMeshPro.dll
-/Applications/Unity/Hub/Editor/2020.3.1f1/Unity.app/Contents/MonoBleedingEdge/bin/mono "/Applications/Unity/Hub/Editor/2020.3.1f1/Unity.app/Contents/Tools/ILPostProcessorRunner/ILPostProcessorRunner.exe" @"/Users/alexandre/delivery/epitech/unity-network/unity-network/unity-network/Temp/UnityTempFile-03b1f63c32d984e1ba39cf4358b64f6f"
+/Applications/Unity/Hub/Editor/2020.3.1f1/Unity.app/Contents/MonoBleedingEdge/bin/mono "/Applications/Unity/Hub/Editor/2020.3.1f1/Unity.app/Contents/Tools/ILPostProcessorRunner/ILPostProcessorRunner.exe" @"/Users/alexandre/delivery/epitech/unity-network/unity-network/unity-network/Temp/UnityTempFile-4f643d416d2494503b0d972bede0795b"
+# Starting IL post processing on Unity.Timeline.dll
+/Applications/Unity/Hub/Editor/2020.3.1f1/Unity.app/Contents/MonoBleedingEdge/bin/mono "/Applications/Unity/Hub/Editor/2020.3.1f1/Unity.app/Contents/Tools/ILPostProcessorRunner/ILPostProcessorRunner.exe" @"/Users/alexandre/delivery/epitech/unity-network/unity-network/unity-network/Temp/UnityTempFile-1624f50cc32ff42f8957ac39a1710865"
 # Starting IL post processing on where-allocations.dll
-/Applications/Unity/Hub/Editor/2020.3.1f1/Unity.app/Contents/MonoBleedingEdge/bin/mono "/Applications/Unity/Hub/Editor/2020.3.1f1/Unity.app/Contents/Tools/ILPostProcessorRunner/ILPostProcessorRunner.exe" @"/Users/alexandre/delivery/epitech/unity-network/unity-network/unity-network/Temp/UnityTempFile-e9440b549bc7f4f7ab7304925f030cfb"
-# Starting IL post processing on Unity.InternalAPIEditorBridge.001.dll
-/Applications/Unity/Hub/Editor/2020.3.1f1/Unity.app/Contents/MonoBleedingEdge/bin/mono "/Applications/Unity/Hub/Editor/2020.3.1f1/Unity.app/Contents/Tools/ILPostProcessorRunner/ILPostProcessorRunner.exe" @"/Users/alexandre/delivery/epitech/unity-network/unity-network/unity-network/Temp/UnityTempFile-aa3d9caed303240f89f52f6569a6b712"
-# Starting IL post processing on Unity.2D.Common.Editor.dll
-/Applications/Unity/Hub/Editor/2020.3.1f1/Unity.app/Contents/MonoBleedingEdge/bin/mono "/Applications/Unity/Hub/Editor/2020.3.1f1/Unity.app/Contents/Tools/ILPostProcessorRunner/ILPostProcessorRunner.exe" @"/Users/alexandre/delivery/epitech/unity-network/unity-network/unity-network/Temp/UnityTempFile-b40370034ad8c4374a951c1693ed897a"
-# Starting IL post processing on Unity.Timeline.Editor.dll
-/Applications/Unity/Hub/Editor/2020.3.1f1/Unity.app/Contents/MonoBleedingEdge/bin/mono "/Applications/Unity/Hub/Editor/2020.3.1f1/Unity.app/Contents/Tools/ILPostProcessorRunner/ILPostProcessorRunner.exe" @"/Users/alexandre/delivery/epitech/unity-network/unity-network/unity-network/Temp/UnityTempFile-d554f9b97167a41d3a5eee38dfd16ddc"
-# Starting IL post processing on Unity.TextMeshPro.Editor.dll
-/Applications/Unity/Hub/Editor/2020.3.1f1/Unity.app/Contents/MonoBleedingEdge/bin/mono "/Applications/Unity/Hub/Editor/2020.3.1f1/Unity.app/Contents/Tools/ILPostProcessorRunner/ILPostProcessorRunner.exe" @"/Users/alexandre/delivery/epitech/unity-network/unity-network/unity-network/Temp/UnityTempFile-90239ba6a74174ab8b4fb5a115073f10"
+/Applications/Unity/Hub/Editor/2020.3.1f1/Unity.app/Contents/MonoBleedingEdge/bin/mono "/Applications/Unity/Hub/Editor/2020.3.1f1/Unity.app/Contents/Tools/ILPostProcessorRunner/ILPostProcessorRunner.exe" @"/Users/alexandre/delivery/epitech/unity-network/unity-network/unity-network/Temp/UnityTempFile-fff8b922b3497406c9b62fda900d3110"
+# Starting compiling kcp2k.dll
+/Applications/Unity/Hub/Editor/2020.3.1f1/Unity.app/Contents/Tools/RoslynScripts/unity_csc.sh /noconfig @Temp/UnityTempFile-ef70a2834b2ac4b00b4cb1ffd346926f
+# Starting IL post processing on Unity.2D.Animation.Triangle.Runtime.dll
+/Applications/Unity/Hub/Editor/2020.3.1f1/Unity.app/Contents/MonoBleedingEdge/bin/mono "/Applications/Unity/Hub/Editor/2020.3.1f1/Unity.app/Contents/Tools/ILPostProcessorRunner/ILPostProcessorRunner.exe" @"/Users/alexandre/delivery/epitech/unity-network/unity-network/unity-network/Temp/UnityTempFile-54b9f34d2781443e99a75fc9f3e43f65"
 # Starting IL post processing on kcp2k.dll
-/Applications/Unity/Hub/Editor/2020.3.1f1/Unity.app/Contents/MonoBleedingEdge/bin/mono "/Applications/Unity/Hub/Editor/2020.3.1f1/Unity.app/Contents/Tools/ILPostProcessorRunner/ILPostProcessorRunner.exe" @"/Users/alexandre/delivery/epitech/unity-network/unity-network/unity-network/Temp/UnityTempFile-e4f93375062234bf68315e267680ab64"
-# Starting IL post processing on Unity.Mathematics.dll
-/Applications/Unity/Hub/Editor/2020.3.1f1/Unity.app/Contents/MonoBleedingEdge/bin/mono "/Applications/Unity/Hub/Editor/2020.3.1f1/Unity.app/Contents/Tools/ILPostProcessorRunner/ILPostProcessorRunner.exe" @"/Users/alexandre/delivery/epitech/unity-network/unity-network/unity-network/Temp/UnityTempFile-465c9066076d44df8855479c5d33cb5c"
+/Applications/Unity/Hub/Editor/2020.3.1f1/Unity.app/Contents/MonoBleedingEdge/bin/mono "/Applications/Unity/Hub/Editor/2020.3.1f1/Unity.app/Contents/Tools/ILPostProcessorRunner/ILPostProcessorRunner.exe" @"/Users/alexandre/delivery/epitech/unity-network/unity-network/unity-network/Temp/UnityTempFile-03fc29c7b2ab548ed9e75b9824616413"
+# Starting compiling Mirror.dll
+/Applications/Unity/Hub/Editor/2020.3.1f1/Unity.app/Contents/Tools/RoslynScripts/unity_csc.sh /noconfig @Temp/UnityTempFile-00800655f5e8f41f98c44684c996a430
+# Starting IL post processing on Unity.TextMeshPro.dll
+/Applications/Unity/Hub/Editor/2020.3.1f1/Unity.app/Contents/MonoBleedingEdge/bin/mono "/Applications/Unity/Hub/Editor/2020.3.1f1/Unity.app/Contents/Tools/ILPostProcessorRunner/ILPostProcessorRunner.exe" @"/Users/alexandre/delivery/epitech/unity-network/unity-network/unity-network/Temp/UnityTempFile-d95418c8a71614f518a6f87b3fa57308"
 # Starting IL post processing on Mirror.dll
-/Applications/Unity/Hub/Editor/2020.3.1f1/Unity.app/Contents/MonoBleedingEdge/bin/mono "/Applications/Unity/Hub/Editor/2020.3.1f1/Unity.app/Contents/Tools/ILPostProcessorRunner/ILPostProcessorRunner.exe" @"/Users/alexandre/delivery/epitech/unity-network/unity-network/unity-network/Temp/UnityTempFile-33adf116a1caf4c0fbc8c1ef8fdab98d"
+/Applications/Unity/Hub/Editor/2020.3.1f1/Unity.app/Contents/MonoBleedingEdge/bin/mono "/Applications/Unity/Hub/Editor/2020.3.1f1/Unity.app/Contents/Tools/ILPostProcessorRunner/ILPostProcessorRunner.exe" @"/Users/alexandre/delivery/epitech/unity-network/unity-network/unity-network/Temp/UnityTempFile-883e1110788624d909bc121dc9f54624"
+# Starting compiling Mirror.Authenticators.dll
+/Applications/Unity/Hub/Editor/2020.3.1f1/Unity.app/Contents/Tools/RoslynScripts/unity_csc.sh /noconfig @Temp/UnityTempFile-ffd7e1e04f0d342cbb39f0bcadabeccb
+# Starting compiling SimpleWebTransport.dll
+/Applications/Unity/Hub/Editor/2020.3.1f1/Unity.app/Contents/Tools/RoslynScripts/unity_csc.sh /noconfig @Temp/UnityTempFile-9c9b09cd793ce41009b94583e18ca1dc
+# Starting compiling Mirror.Components.dll
+/Applications/Unity/Hub/Editor/2020.3.1f1/Unity.app/Contents/Tools/RoslynScripts/unity_csc.sh /noconfig @Temp/UnityTempFile-7d305b8c6466c4345a949525438c47cd
 # Starting IL post processing on Mirror.Authenticators.dll
-/Applications/Unity/Hub/Editor/2020.3.1f1/Unity.app/Contents/MonoBleedingEdge/bin/mono "/Applications/Unity/Hub/Editor/2020.3.1f1/Unity.app/Contents/Tools/ILPostProcessorRunner/ILPostProcessorRunner.exe" @"/Users/alexandre/delivery/epitech/unity-network/unity-network/unity-network/Temp/UnityTempFile-4693e98d47b8a4ac7af2bcfd2d040b15"
-# Starting IL post processing on Unity.Mathematics.Editor.dll
-/Applications/Unity/Hub/Editor/2020.3.1f1/Unity.app/Contents/MonoBleedingEdge/bin/mono "/Applications/Unity/Hub/Editor/2020.3.1f1/Unity.app/Contents/Tools/ILPostProcessorRunner/ILPostProcessorRunner.exe" @"/Users/alexandre/delivery/epitech/unity-network/unity-network/unity-network/Temp/UnityTempFile-d3945ffccbea34c74ac107e1bec0c564"
+/Applications/Unity/Hub/Editor/2020.3.1f1/Unity.app/Contents/MonoBleedingEdge/bin/mono "/Applications/Unity/Hub/Editor/2020.3.1f1/Unity.app/Contents/Tools/ILPostProcessorRunner/ILPostProcessorRunner.exe" @"/Users/alexandre/delivery/epitech/unity-network/unity-network/unity-network/Temp/UnityTempFile-61a4066d2a55445ff8f879530fd9c1a4"
 # Starting IL post processing on SimpleWebTransport.dll
-/Applications/Unity/Hub/Editor/2020.3.1f1/Unity.app/Contents/MonoBleedingEdge/bin/mono "/Applications/Unity/Hub/Editor/2020.3.1f1/Unity.app/Contents/Tools/ILPostProcessorRunner/ILPostProcessorRunner.exe" @"/Users/alexandre/delivery/epitech/unity-network/unity-network/unity-network/Temp/UnityTempFile-542ec38b86288425a9d2994186d11f5c"
-# Starting IL post processing on Unity.2D.Animation.Runtime.dll
-/Applications/Unity/Hub/Editor/2020.3.1f1/Unity.app/Contents/MonoBleedingEdge/bin/mono "/Applications/Unity/Hub/Editor/2020.3.1f1/Unity.app/Contents/Tools/ILPostProcessorRunner/ILPostProcessorRunner.exe" @"/Users/alexandre/delivery/epitech/unity-network/unity-network/unity-network/Temp/UnityTempFile-a854ddf2d09c640dc9fcd8964ee77ca1"
+/Applications/Unity/Hub/Editor/2020.3.1f1/Unity.app/Contents/MonoBleedingEdge/bin/mono "/Applications/Unity/Hub/Editor/2020.3.1f1/Unity.app/Contents/Tools/ILPostProcessorRunner/ILPostProcessorRunner.exe" @"/Users/alexandre/delivery/epitech/unity-network/unity-network/unity-network/Temp/UnityTempFile-8c581ad28043a419895ee0052c519b65"
 # Starting IL post processing on Mirror.Components.dll
-/Applications/Unity/Hub/Editor/2020.3.1f1/Unity.app/Contents/MonoBleedingEdge/bin/mono "/Applications/Unity/Hub/Editor/2020.3.1f1/Unity.app/Contents/Tools/ILPostProcessorRunner/ILPostProcessorRunner.exe" @"/Users/alexandre/delivery/epitech/unity-network/unity-network/unity-network/Temp/UnityTempFile-b3cd54c100c334e8aa2b5aefe0f43265"
-# Starting IL post processing on Unity.2D.SpriteShape.Runtime.dll
-/Applications/Unity/Hub/Editor/2020.3.1f1/Unity.app/Contents/MonoBleedingEdge/bin/mono "/Applications/Unity/Hub/Editor/2020.3.1f1/Unity.app/Contents/Tools/ILPostProcessorRunner/ILPostProcessorRunner.exe" @"/Users/alexandre/delivery/epitech/unity-network/unity-network/unity-network/Temp/UnityTempFile-520290c8db65b42b19cd482f1bb3d0b8"
-# Starting IL post processing on Mirror.Editor.dll
-/Applications/Unity/Hub/Editor/2020.3.1f1/Unity.app/Contents/MonoBleedingEdge/bin/mono "/Applications/Unity/Hub/Editor/2020.3.1f1/Unity.app/Contents/Tools/ILPostProcessorRunner/ILPostProcessorRunner.exe" @"/Users/alexandre/delivery/epitech/unity-network/unity-network/unity-network/Temp/UnityTempFile-06baabdd7b93e45ca8af218b5da9e1af"
+/Applications/Unity/Hub/Editor/2020.3.1f1/Unity.app/Contents/MonoBleedingEdge/bin/mono "/Applications/Unity/Hub/Editor/2020.3.1f1/Unity.app/Contents/Tools/ILPostProcessorRunner/ILPostProcessorRunner.exe" @"/Users/alexandre/delivery/epitech/unity-network/unity-network/unity-network/Temp/UnityTempFile-138fa42f8480047b5a254249e1472aa1"
+# Starting compiling Mirror.Examples.dll
+/Applications/Unity/Hub/Editor/2020.3.1f1/Unity.app/Contents/Tools/RoslynScripts/unity_csc.sh /noconfig @Temp/UnityTempFile-86cb7473e641144ad9d8a40ac22d40f7
+# Starting compiling Unity.2D.Animation.Runtime.dll
+/Applications/Unity/Hub/Editor/2020.3.1f1/Unity.app/Contents/Tools/RoslynScripts/unity_csc.sh /noconfig @Temp/UnityTempFile-ea4551b3099d349ab8d6023e331dcba3
+# Starting compiling Unity.2D.SpriteShape.Runtime.dll
+/Applications/Unity/Hub/Editor/2020.3.1f1/Unity.app/Contents/Tools/RoslynScripts/unity_csc.sh /noconfig @Temp/UnityTempFile-08191b36edac0499686952373ca74dad
+# Starting IL post processing on Unity.Mathematics.dll
+/Applications/Unity/Hub/Editor/2020.3.1f1/Unity.app/Contents/MonoBleedingEdge/bin/mono "/Applications/Unity/Hub/Editor/2020.3.1f1/Unity.app/Contents/Tools/ILPostProcessorRunner/ILPostProcessorRunner.exe" @"/Users/alexandre/delivery/epitech/unity-network/unity-network/unity-network/Temp/UnityTempFile-65b7262371feb47a58c0d7be61609d0d"
+# Starting compiling Assembly-CSharp.dll
+/Applications/Unity/Hub/Editor/2020.3.1f1/Unity.app/Contents/Tools/RoslynScripts/unity_csc.sh /noconfig @Temp/UnityTempFile-abc0e37818e424ef0838d618e51132f6
 # Starting IL post processing on Mirror.Examples.dll
-/Applications/Unity/Hub/Editor/2020.3.1f1/Unity.app/Contents/MonoBleedingEdge/bin/mono "/Applications/Unity/Hub/Editor/2020.3.1f1/Unity.app/Contents/Tools/ILPostProcessorRunner/ILPostProcessorRunner.exe" @"/Users/alexandre/delivery/epitech/unity-network/unity-network/unity-network/Temp/UnityTempFile-226ebdbb53dbe47f6b51f0faf3a5b602"
-# Starting IL post processing on Unity.2D.SpriteShape.Editor.dll
-/Applications/Unity/Hub/Editor/2020.3.1f1/Unity.app/Contents/MonoBleedingEdge/bin/mono "/Applications/Unity/Hub/Editor/2020.3.1f1/Unity.app/Contents/Tools/ILPostProcessorRunner/ILPostProcessorRunner.exe" @"/Users/alexandre/delivery/epitech/unity-network/unity-network/unity-network/Temp/UnityTempFile-f9b525865d6464034baa9848a8e0325a"
-# Starting IL post processing on Unity.2D.Animation.Editor.dll
-/Applications/Unity/Hub/Editor/2020.3.1f1/Unity.app/Contents/MonoBleedingEdge/bin/mono "/Applications/Unity/Hub/Editor/2020.3.1f1/Unity.app/Contents/Tools/ILPostProcessorRunner/ILPostProcessorRunner.exe" @"/Users/alexandre/delivery/epitech/unity-network/unity-network/unity-network/Temp/UnityTempFile-24fa32bc433cf449e8cf36fbd06ab157"
-# Starting IL post processing on Unity.2D.IK.Editor.dll
-/Applications/Unity/Hub/Editor/2020.3.1f1/Unity.app/Contents/MonoBleedingEdge/bin/mono "/Applications/Unity/Hub/Editor/2020.3.1f1/Unity.app/Contents/Tools/ILPostProcessorRunner/ILPostProcessorRunner.exe" @"/Users/alexandre/delivery/epitech/unity-network/unity-network/unity-network/Temp/UnityTempFile-2bd6b1522190b4af5a5b7f1f9d2d131f"
-# Starting IL post processing on Unity.2D.Psdimporter.Editor.dll
-/Applications/Unity/Hub/Editor/2020.3.1f1/Unity.app/Contents/MonoBleedingEdge/bin/mono "/Applications/Unity/Hub/Editor/2020.3.1f1/Unity.app/Contents/Tools/ILPostProcessorRunner/ILPostProcessorRunner.exe" @"/Users/alexandre/delivery/epitech/unity-network/unity-network/unity-network/Temp/UnityTempFile-5ec5621180cba428c98ef5882ff8194a"
+/Applications/Unity/Hub/Editor/2020.3.1f1/Unity.app/Contents/MonoBleedingEdge/bin/mono "/Applications/Unity/Hub/Editor/2020.3.1f1/Unity.app/Contents/Tools/ILPostProcessorRunner/ILPostProcessorRunner.exe" @"/Users/alexandre/delivery/epitech/unity-network/unity-network/unity-network/Temp/UnityTempFile-b66b844e05264447faa1f81c22322a5c"
+# Starting IL post processing on Unity.2D.Animation.Runtime.dll
+/Applications/Unity/Hub/Editor/2020.3.1f1/Unity.app/Contents/MonoBleedingEdge/bin/mono "/Applications/Unity/Hub/Editor/2020.3.1f1/Unity.app/Contents/Tools/ILPostProcessorRunner/ILPostProcessorRunner.exe" @"/Users/alexandre/delivery/epitech/unity-network/unity-network/unity-network/Temp/UnityTempFile-94a73b3c06eb8412da62a74b5e5027a3"
+# Starting IL post processing on Unity.2D.SpriteShape.Runtime.dll
+/Applications/Unity/Hub/Editor/2020.3.1f1/Unity.app/Contents/MonoBleedingEdge/bin/mono "/Applications/Unity/Hub/Editor/2020.3.1f1/Unity.app/Contents/Tools/ILPostProcessorRunner/ILPostProcessorRunner.exe" @"/Users/alexandre/delivery/epitech/unity-network/unity-network/unity-network/Temp/UnityTempFile-7344112f660034f7e8f8ffc2ad4c34a8"
+# Starting IL post processing on Assembly-CSharp.dll
+/Applications/Unity/Hub/Editor/2020.3.1f1/Unity.app/Contents/MonoBleedingEdge/bin/mono "/Applications/Unity/Hub/Editor/2020.3.1f1/Unity.app/Contents/Tools/ILPostProcessorRunner/ILPostProcessorRunner.exe" @"/Users/alexandre/delivery/epitech/unity-network/unity-network/unity-network/Temp/UnityTempFile-a1756a189569d42e28a0d277099af530"

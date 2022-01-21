@@ -373,16 +373,16 @@ MonoBehaviour:
   networkAddress: localhost
   maxConnections: 100
   authenticator: {fileID: 0}
-  playerPrefab: {fileID: 7925531352606026607, guid: 3c459578da58641299f29a653c923d30, type: 3}
+  playerPrefab: {fileID: 150949943921614821, guid: 3c459578da58641299f29a653c923d30, type: 3}
   autoCreatePlayer: 1
-  playerSpawnMethod: 0
+  playerSpawnMethod: 1
   spawnPrefabs:
-  - {fileID: 3551848870004609361, guid: 9245297fe819a464a825e8d6d573e9b2, type: 3}
+  - {fileID: 0}
   showRoomGUI: 1
   minPlayers: 1
   roomPlayerPrefab: {fileID: 114033720796874720, guid: b3c58c4b371ce4f6ca96d72b63e95e14, type: 3}
-  RoomScene: Assets/Scenes/Lobby.unity
-  GameplayScene: Assets/Scenes/SampleScene.unity
+  RoomScene: Assets/Scenes/LobbyScene.unity
+  GameplayScene: Assets/Scenes/GameScene.unity
   _allPlayersReady: 0
   roomSlots: []
   clientIndex: 0

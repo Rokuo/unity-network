@@ -1,9 +1,10 @@
 using System.Collections;
 using System.Collections.Generic;
+using Mirror;
 using UnityEngine;
 
 
-public class PlayerMove : MonoBehaviour
+public class PlayerMove : NetworkBehaviour
 {
     private Rigidbody2D rb;
     [SerializeField] private int speed;
@@ -47,6 +48,9 @@ public class PlayerMove : MonoBehaviour
 
     void Update()
     {
+        if (!isLocalPlayer || !hasAuthority)
+            return;
+
         if (horizontal != 0)
             horizontalDirection = horizontal;
         if (vertical != 0)
@@ -99,6 +103,9 @@ public class PlayerMove : MonoBehaviour
     }
 
     void FixedUpdate() {
+        if (!isLocalPlayer || !hasAuthority)
+            return;
+
         rb.velocity = new Vector2(horizontal * speed, isDashing ? 0 : jumpVelocity);
         if (isDashing == true) {
             rb.AddForce(new Vector2(horizontalDirection * 25, 0), ForceMode2D.Impulse);

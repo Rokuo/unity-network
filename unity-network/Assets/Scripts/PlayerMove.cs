@@ -9,22 +9,45 @@ public class PlayerMove : NetworkBehaviour
     private Rigidbody2D rb;
     [SerializeField] private int speed;
     private Vector3 moveDirection;
+
     private bool isDashing = false;
     private bool isDashAvailable = true;
+    IEnumerator dashCoroutine;
+
     [SerializeField] private float jumpVelocity;
     [SerializeField] private float jumpRatio;
     [SerializeField] private float jumpPeakTiming;
-    IEnumerator dashCoroutine;
+    private bool canJump = true;
+
     float horizontalDirection = 1;
     float verticalDirection = 1;
     [SerializeField] private float normalGravity;
-    private bool canJump = true;
 
     float horizontal;
     float vertical;
 
     private float moveX = 0f;
     private float moveY = 0f;
+
+    #region Server
+
+    [Command]
+    private void CmdJump()
+    {
+        canJump = false;
+        jumpVelocity = 30f;
+        Invoke("ResetJumpVelocity", jumpPeakTiming);
+        Debug.Log("jump");
+        rb.velocity = new Vector2(0f, jumpVelocity);
+    }
+
+    [Command]
+    private void CmdMove(float horizontal, int speed, bool isDashing, float jumpVelocity)
+    {
+        rb.velocity = new Vector2(horizontal * speed, isDashing ? 0 : jumpVelocity);
+    }
+
+    #endregion
 
     void Start()
     {
@@ -58,6 +81,7 @@ public class PlayerMove : NetworkBehaviour
         horizontal = Input.GetAxisRaw("Horizontal");
         vertical = Input.GetAxisRaw("Vertical");
         if (Input.GetKeyDown(KeyCode.Space) && canJump) {
+            //CmdJump();
             canJump = false;
             jumpVelocity = 30f;
             Invoke("ResetJumpVelocity", jumpPeakTiming);
@@ -106,10 +130,11 @@ public class PlayerMove : NetworkBehaviour
         if (!isLocalPlayer || !hasAuthority)
             return;
 
-        rb.velocity = new Vector2(horizontal * speed, isDashing ? 0 : jumpVelocity);
-        if (isDashing == true) {
-            rb.AddForce(new Vector2(horizontalDirection * 25, 0), ForceMode2D.Impulse);
-        }
+        //rb.velocity = new Vector2(horizontal * speed, isDashing ? 0 : jumpVelocity);
+        CmdMove(horizontal, speed, isDashing, jumpVelocity);
+        //if (isDashing == true) {
+        //    rb.AddForce(new Vector2(horizontalDirection * 25, 0), ForceMode2D.Impulse);
+        //}
     }
 
 }

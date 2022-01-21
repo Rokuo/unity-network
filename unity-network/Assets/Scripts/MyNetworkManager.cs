@@ -4,7 +4,7 @@ using Mirror;
 using TMPro;
 using UnityEngine;
 
-public class MyNetworkManager : NetworkManager
+public class MyNetworkManager : NetworkRoomManager
 {
     [SerializeField] private Transform PlayerListView = null;
     public GameObject PlayerTagPrefab = null;
@@ -19,9 +19,9 @@ public class MyNetworkManager : NetworkManager
     {
         base.OnServerAddPlayer(conn);
         Debug.Log($"On add Player for lobby addr: {conn.address}");
-        GameObject playerTag = Instantiate(PlayerTagPrefab, PlayerListView);
-        NetworkServer.Spawn(playerTag, conn);
-        playerTag.GetComponentInChildren<TMP_Text>().text = $"player : {conn.address}";
+        //GameObject playerTag = Instantiate(PlayerTagPrefab, PlayerListView);
+        //NetworkServer.Spawn(playerTag, conn);
+        //playerTag.GetComponentInChildren<TMP_Text>().text = $"player : {conn.address}";
     }
 
     public override void OnServerConnect(NetworkConnection conn)

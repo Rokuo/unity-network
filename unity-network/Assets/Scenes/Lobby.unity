@@ -141,7 +141,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &143610855
 RectTransform:
   m_ObjectHideFlags: 0
@@ -378,6 +378,14 @@ MonoBehaviour:
   playerSpawnMethod: 0
   spawnPrefabs:
   - {fileID: 3551848870004609361, guid: 9245297fe819a464a825e8d6d573e9b2, type: 3}
+  showRoomGUI: 1
+  minPlayers: 1
+  roomPlayerPrefab: {fileID: 114033720796874720, guid: b3c58c4b371ce4f6ca96d72b63e95e14, type: 3}
+  RoomScene: Assets/Scenes/Lobby.unity
+  GameplayScene: Assets/Scenes/SampleScene.unity
+  _allPlayersReady: 0
+  roomSlots: []
+  clientIndex: 0
   PlayerListView: {fileID: 2055824934}
   PlayerTagPrefab: {fileID: 3551848870004609361, guid: 9245297fe819a464a825e8d6d573e9b2, type: 3}
 --- !u!114 &703630177

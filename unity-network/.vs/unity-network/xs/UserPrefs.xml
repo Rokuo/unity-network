@@ -1,8 +1,10 @@
 ﻿<Properties StartupConfiguration="{1BF08A07-4458-0E59-1267-08A487B916C0}|">
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/MyNetworkManager.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Mirror/Examples/Room/Scripts/PlayerController.cs">
     <Files>
-      <File FileName="Assets/Scripts/MyNetworkManager.cs" Line="21" Column="19" />
+      <File FileName="Assets/Scripts/MyNetworkManager.cs" Line="18" Column="49" />
       <File FileName="Assets/Mirror/Runtime/NetworkManager.cs" Line="1267" Column="47" />
+      <File FileName="Assets/Scripts/PlayerMove.cs" Line="6" Column="40" />
+      <File FileName="Assets/Mirror/Examples/Room/Scripts/PlayerController.cs" Line="9" Column="23" NotebookId="1" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />

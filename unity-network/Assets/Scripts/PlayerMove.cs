@@ -17,7 +17,7 @@ public class PlayerMove : NetworkBehaviour
     [SerializeField] private float jumpVelocity;
     [SerializeField] private float jumpRatio;
     [SerializeField] private float jumpPeakTiming;
-    private bool canJump = true;
+    [SerializeField] private bool canJump = true;
 
     float horizontalDirection = 1;
     float verticalDirection = 1;
@@ -34,10 +34,10 @@ public class PlayerMove : NetworkBehaviour
     [Command]
     private void CmdJump()
     {
+        Debug.Log($"jump from {NetworkClient.connection.connectionId}");
         canJump = false;
         jumpVelocity = 30f;
-        Invoke("ResetJumpVelocity", jumpPeakTiming);
-        Debug.Log("jump");
+        Invoke(nameof(ResetJumpVelocity), jumpPeakTiming);
         rb.velocity = new Vector2(0f, jumpVelocity);
     }
 
@@ -80,13 +80,14 @@ public class PlayerMove : NetworkBehaviour
             verticalDirection = vertical;
         horizontal = Input.GetAxisRaw("Horizontal");
         vertical = Input.GetAxisRaw("Vertical");
+
         if (Input.GetKeyDown(KeyCode.Space) && canJump) {
-            //CmdJump();
-            canJump = false;
-            jumpVelocity = 30f;
-            Invoke("ResetJumpVelocity", jumpPeakTiming);
-            Debug.Log("jump");
-            rb.velocity = new Vector2(0f, jumpVelocity);
+            CmdJump();
+            //canJump = false;
+            //jumpVelocity = 30f;
+            //Invoke("ResetJumpVelocity", jumpPeakTiming);
+            //Debug.Log("jump");
+            //rb.velocity = new Vector2(0f, jumpVelocity);
         }
 
         if (Input.GetMouseButtonDown(1) && isDashAvailable) {
@@ -99,6 +100,8 @@ public class PlayerMove : NetworkBehaviour
         // vertical = Input.GetAxis("Jump");
         // ProcessInputs();
     }
+
+    // target rpc for slow jump
 
     void ResetJumpVelocity() {
         StartCoroutine(SlowJump());

@@ -1,15 +1,15 @@
 ﻿<Properties StartupConfiguration="{1BF08A07-4458-0E59-1267-08A487B916C0}|">
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/PlayerMove.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/MyNetworkManager.cs">
     <Files>
-      <File FileName="Assets/Mirror/Runtime/NetworkManager.cs" />
-      <File FileName="Assets/Scripts/PlayerMove.cs" Line="38" Column="1" />
-      <File FileName="Assets/Mirror/Examples/Room/Scripts/PlayerController.cs" Line="61" Column="23" NotebookId="1" />
-      <File FileName="Assets/Scripts/MyNetworkManager.cs" Line="18" Column="49" NotebookId="1" />
+      <File FileName="Assets/Scripts/MyNetworkManager.cs" Line="19" Column="1" />
+      <File FileName="Assets/Scripts/PlayerMove.cs" />
+      <File FileName="Assets/Scripts/SteamLobby.cs" />
+      <File FileName="Assets/Mirror/Examples/Room/Scripts/PlayerController.cs" Line="45" Column="12" NotebookId="1" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="1753af71-18cb-4c76-80f3-8189cb0413af" />
+  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="1e5d118c-961c-412f-a1f9-1013aca42610" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>

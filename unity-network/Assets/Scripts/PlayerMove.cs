@@ -47,6 +47,14 @@ public class PlayerMove : NetworkBehaviour
         rb.velocity = new Vector2(horizontal * speed, isDashing ? 0 : jumpVelocity);
     }
 
+    [Command]
+    private void CmdDashCoroutine()
+    {
+        dashCoroutine = Dash(0.1f, 2);
+        StartCoroutine(dashCoroutine);
+    }
+
+
     #endregion
 
     void Start()
@@ -92,12 +100,10 @@ public class PlayerMove : NetworkBehaviour
         if (Input.GetMouseButtonDown(1) && isDashAvailable) {
             if (dashCoroutine != null)
                 StopCoroutine(dashCoroutine);
-            dashCoroutine = Dash(0.1f, 2);
-            StartCoroutine(dashCoroutine);
+            CmdDashCoroutine();
+            // dashCoroutine = Dash(0.1f, 2);
+            // StartCoroutine(dashCoroutine);
         }
-
-        // vertical = Input.GetAxis("Jump");
-        // ProcessInputs();
     }
 
     void ResetJumpVelocity() {
@@ -119,10 +125,12 @@ public class PlayerMove : NetworkBehaviour
         rb.gravityScale = 0f;
         rb.velocity = Vector2.zero;
         yield return new WaitForSeconds(dashDuration);
+        Debug.Log("Stop dasing");
         isDashing = false;
         rb.gravityScale = normalGravity;
         rb.velocity = Vector2.zero;
         yield return new WaitForSeconds(dashCooldown);
+        Debug.Log("Dash available");
         isDashAvailable = true;
     }
 
@@ -130,11 +138,11 @@ public class PlayerMove : NetworkBehaviour
         if (!isLocalPlayer || !hasAuthority)
             return;
 
-        //rb.velocity = new Vector2(horizontal * speed, isDashing ? 0 : jumpVelocity);
+        // rb.velocity = new Vector2(horizontal * speed, isDashing ? 0 : jumpVelocity);
         CmdMove(horizontal, speed, isDashing, jumpVelocity);
-        //if (isDashing == true) {
-        //    rb.AddForce(new Vector2(horizontalDirection * 25, 0), ForceMode2D.Impulse);
-        //}
+        if (isDashing == true) {
+           rb.AddForce(new Vector2(horizontalDirection * 25, 0), ForceMode2D.Impulse);
+        }
     }
 
 }

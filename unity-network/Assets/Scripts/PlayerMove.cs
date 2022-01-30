@@ -77,7 +77,6 @@ public class PlayerMove : NetworkBehaviour
         horizontal = Input.GetAxisRaw("Horizontal");
         vertical = Input.GetAxisRaw("Vertical");
         if (Input.GetKeyDown(KeyCode.Space) && canJump) {
-            // CmdJump();
             StartCoroutine(Jump());
         }
 

@@ -6,10 +6,11 @@ using Mirror;
 public class Projectile : NetworkBehaviour
 {
     [Server]
-    private void OnTriggerEnter(Collider other) {
-        // if (!other.TryGetComponent<Health>(out Health health)) return;
+    private void OnTriggerEnter2D(Collider2D other) {
+        if (!other.TryGetComponent<Health>(out Health health)) return;
 
-        // health.ReceiveHealth(10);
+        Debug.Log($"{netId} Collision on projectile");
+        health.DealDamage(10);
         DestroySelf();
     }
 

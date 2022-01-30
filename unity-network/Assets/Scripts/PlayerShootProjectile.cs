@@ -12,10 +12,11 @@ public class PlayerShootProjectile : NetworkBehaviour
     [Command]
     void CmdSpawnProjectile(Vector3 mousePosition)
     {
-        Transform projectileTransform = Instantiate(pfProjectile, player.transform.position, Quaternion.identity);
+        Vector3 shootDir = (mousePosition- player.transform.position).normalized;
+        Vector3 offsetPosition = player.transform.position + shootDir;
+        Transform projectileTransform = Instantiate(pfProjectile, offsetPosition, Quaternion.identity);
 
-        Vector3 shootDir = (mousePosition- projectileTransform.position).normalized;
-        projectileTransform.GetComponent<Rigidbody2D>().velocity = shootDir * 25f;
+        projectileTransform.GetComponent<Rigidbody2D>().velocity = shootDir * 10f;
         // projectileTransform.GetComponent<Projectile>().Setup(shootDir);
         NetworkServer.Spawn(projectileTransform.gameObject);
     }

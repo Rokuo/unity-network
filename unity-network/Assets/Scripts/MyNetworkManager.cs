@@ -1,11 +1,13 @@
-using System.Collections;
-using System.Collections.Generic;
+using System;
 using Mirror;
-using TMPro;
 using UnityEngine;
+using Random = UnityEngine.Random;
 
 public class MyNetworkManager : NetworkRoomManager
 {
+    public static Action<bool> onServerJoin;
+    public static Action onServerLeave;
+
     [SerializeField] private Transform PlayerListView = null;
     public GameObject PlayerTagPrefab = null;
     [SerializeField] private GameManager gManager;
@@ -14,6 +16,18 @@ public class MyNetworkManager : NetworkRoomManager
     {
         base.OnServerAddPlayer(conn);
         Debug.Log($"On add Player for lobby addr: {conn.address}");
+    }
+
+    public override void OnRoomClientConnect()
+    {
+        base.OnRoomClientConnect();
+        Debug.Log($"OnRoomClientConnect");
+    }
+
+    public override void OnRoomClientEnter()
+    {
+        base.OnRoomClientEnter();
+        Debug.Log($"OnRoomClientEnter");
     }
 
     public override bool OnRoomServerSceneLoadedForPlayer(NetworkConnection conn, GameObject roomPlayer, GameObject gamePlayer)
@@ -28,6 +42,24 @@ public class MyNetworkManager : NetworkRoomManager
         );
         player.SetPlayerColor(randomColor);
         return base.OnRoomServerSceneLoadedForPlayer(conn, roomPlayer, gamePlayer);
+    }
+
+    public override void OnStartHost()
+    {
+        base.OnStartHost();
+        onServerJoin?.Invoke(true);
+    }
+
+    public override void OnStopHost()
+    {
+        base.OnStopHost();
+        onServerLeave?.Invoke();
+    }
+
+    public override void OnStopClient()
+    {
+        base.OnStopClient();
+        onServerLeave?.Invoke();
     }
 
     // public override void OnServerConnect(NetworkConnection conn)

@@ -62,6 +62,12 @@ public class MyNetworkManager : NetworkRoomManager
         onServerLeave?.Invoke();
     }
 
+    public override void OnClientConnect()
+    {
+        base.OnClientConnect();
+        onServerJoin?.Invoke(false);
+    }
+
     // public override void OnServerConnect(NetworkConnection conn)
     // {
     //     //base.OnServerConnect(conn);

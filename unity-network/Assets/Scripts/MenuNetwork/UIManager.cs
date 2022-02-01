@@ -30,7 +30,6 @@ public class UIManager : MonoBehaviour
 
     public void OnLeave_SwitchCanvas()
     {
-        Debug.Log($"Canva switch on leave home is {m_homeCanva.activeSelf}");
         m_homeCanva.SetActive(true);
         m_lobbyCanva.SetActive(false);
         m_startGameButton.SetActive(false);

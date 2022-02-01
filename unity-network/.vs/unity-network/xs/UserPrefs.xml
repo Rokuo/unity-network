@@ -1,16 +1,17 @@
 ﻿<Properties StartupConfiguration="{1BF08A07-4458-0E59-1267-08A487B916C0}|">
   <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/MenuNetwork/PlayerName.cs">
     <Files>
-      <File FileName="Assets/Scripts/PlayerMove.cs" Line="33" Column="14" />
-      <File FileName="Assets/Scripts/SteamManager.cs" Line="53" Column="70" />
+      <File FileName="Assets/Scripts/PlayerMove.cs" Line="127" Column="32" />
       <File FileName="Assets/Mirror/Runtime/NetworkManagerHUD.cs" Line="1" Column="1" />
-      <File FileName="Assets/Scripts/UIManager.cs" Line="37" Column="6" />
+      <File FileName="Assets/Scripts/UIManager.cs" Line="33" Column="1" />
       <File FileName="Assets/Mirror/Components/NetworkRoomManager.cs" Line="537" Column="29" NotebookId="1" />
-      <File FileName="Assets/Scripts/MyNetworkManager.cs" Line="26" Column="1" NotebookId="1" />
+      <File FileName="Assets/Scripts/MyNetworkManager.cs" Line="18" Column="49" NotebookId="1" />
       <File FileName="Assets/Scripts/LeaveServer.cs" Line="10" Column="28" NotebookId="1" />
-      <File FileName="Assets/Scripts/HostGame.cs" Line="14" Column="48" NotebookId="1" />
-      <File FileName="Assets/Scripts/JoinGame.cs" Line="9" Column="64" NotebookId="1" />
-      <File FileName="Assets/Scripts/MenuNetwork/PlayerName.cs" Line="7" Column="5" NotebookId="1" />
+      <File FileName="Assets/Scripts/HostGame.cs" Line="12" Column="6" NotebookId="1" />
+      <File FileName="Assets/Scripts/JoinGame.cs" Line="9" Column="1" NotebookId="1" />
+      <File FileName="Assets/Scripts/MenuNetwork/PlayerName.cs" Line="12" Column="64" NotebookId="1" />
+      <File FileName="Assets/Scripts/MenuNetwork/MyNetworkRoomPlayer.cs" Line="20" Column="38" NotebookId="1" />
+      <File FileName="Assets/Mirror/Components/NetworkRoomPlayer.cs" Line="129" Column="57" NotebookId="1" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />

@@ -924,9 +924,9 @@ MonoBehaviour:
   playerSpawnMethod: 1
   spawnPrefabs:
   - {fileID: 4025979473627398746, guid: 2ba5df09447c09a4db7ca1954597ae79, type: 3}
-  showRoomGUI: 0
+  showRoomGUI: 1
   minPlayers: 1
-  roomPlayerPrefab: {fileID: 114033720796874720, guid: b3c58c4b371ce4f6ca96d72b63e95e14, type: 3}
+  roomPlayerPrefab: {fileID: 936386492893168792, guid: b3c58c4b371ce4f6ca96d72b63e95e14, type: 3}
   RoomScene: Assets/Scenes/HomeScene.unity
   GameplayScene: Assets/Scenes/GameScene.unity
   _allPlayersReady: 0
@@ -2573,8 +2573,6 @@ GameObject:
   - component: {fileID: 1401304329}
   - component: {fileID: 1401304328}
   - component: {fileID: 1401304327}
-  - component: {fileID: 1401304331}
-  - component: {fileID: 1401304330}
   m_Layer: 5
   m_Name: LeaveServer
   m_TagString: Untagged
@@ -2646,7 +2644,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1401304330}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: LeaveServer, Assembly-CSharp
         m_MethodName: OnClickLeaveServer
         m_Mode: 1
@@ -2696,37 +2694,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1401304325}
   m_CullTransparentMesh: 1
---- !u!114 &1401304330
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1401304325}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: dd19ef777296444b99781466d3d1b117, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  syncMode: 0
-  syncInterval: 0.1
---- !u!114 &1401304331
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1401304325}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9b91ecbcc199f4492b9a91e820070131, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  sceneId: 3120437475
-  serverOnly: 0
-  visible: 0
-  m_AssetId: 
-  hasSpawned: 0
 --- !u!1 &1513851903
 GameObject:
   m_ObjectHideFlags: 0

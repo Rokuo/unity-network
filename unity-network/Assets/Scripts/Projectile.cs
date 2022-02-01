@@ -5,6 +5,12 @@ using Mirror;
 
 public class Projectile : NetworkBehaviour
 {
+    [Command]
+    void CmdDestroySelf()
+    {
+        StartCoroutine(AutomaticDestroy());
+    }
+
     [Server]
     private void OnTriggerEnter2D(Collider2D other) {
         if (!other.TryGetComponent<Health>(out Health health)) return;
@@ -18,4 +24,17 @@ public class Projectile : NetworkBehaviour
     private void DestroySelf() {
         NetworkServer.Destroy(gameObject);
     }
+
+    IEnumerator AutomaticDestroy()
+    {
+        yield return new WaitForSeconds(3f);
+        NetworkServer.Destroy(gameObject);
+    }
+
+    [Server]
+    void Start()
+    {
+        CmdDestroySelf();
+    }
+
 }

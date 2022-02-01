@@ -16,6 +16,7 @@ GameObject:
   - component: {fileID: 3673319572089543990}
   - component: {fileID: 8354787790420469618}
   - component: {fileID: 3406159879356560471}
+  - component: {fileID: 5170548726138005647}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -160,8 +161,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   syncMode: 0
   syncInterval: 0.1
-  pfProjectile: {fileID: 4025979473627398745, guid: 2ba5df09447c09a4db7ca1954597ae79, type: 3}
-  player: {fileID: 150949943921614818}
+  pfProjectile: {fileID: 4025979473627398746, guid: 2ba5df09447c09a4db7ca1954597ae79, type: 3}
 --- !u!114 &3406159879356560471
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -178,6 +178,22 @@ MonoBehaviour:
   syncInterval: 0.1
   displayHealthText: {fileID: 9131726779355044350}
   maxHealth: 100
+--- !u!114 &5170548726138005647
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 150949943921614821}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 14b845288be6c32419fd68d5edd14307, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  syncMode: 0
+  syncInterval: 0.1
+  spriteRenderer: {fileID: 3505197071221101781}
+  playerColor: {r: 0, g: 0, b: 0, a: 1}
 --- !u!1 &6466418348216680189
 GameObject:
   m_ObjectHideFlags: 0

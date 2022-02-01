@@ -5,20 +5,21 @@ using Mirror;
 
 public class PlayerShootProjectile : NetworkBehaviour
 {
-    [SerializeField] private Transform pfProjectile;
-    [SerializeField] private Transform player;
-
+    [SerializeField] private GameObject pfProjectile;
 
     [Command]
     void CmdSpawnProjectile(Vector3 mousePosition)
     {
-        Vector3 shootDir = (mousePosition- player.transform.position).normalized;
-        Vector3 offsetPosition = player.transform.position + shootDir;
-        Transform projectileTransform = Instantiate(pfProjectile, offsetPosition, Quaternion.identity);
+        Vector3 shootDir = (mousePosition- transform.position).normalized;
+        Vector3 offsetPosition = transform.position + shootDir;
+        GameObject projectileTransform = Instantiate(pfProjectile, offsetPosition, Quaternion.identity);
 
+        // Debug.Log(transform.GetChild(0).GetComponent<SpriteRenderer>().material.color);
+        // projectileTransform.transform.GetChild(0).GetComponent<SpriteRenderer>().material.color = transform.GetChild(0).GetComponent<SpriteRenderer>().material.color;
+        // pfProjectile.GetComponent<ColorProjectile>().SetProjectileColor(transform.GetChild(0).GetComponent<SpriteRenderer>().material.color);
         projectileTransform.GetComponent<Rigidbody2D>().velocity = shootDir * 10f;
-        // projectileTransform.GetComponent<Projectile>().Setup(shootDir);
-        NetworkServer.Spawn(projectileTransform.gameObject);
+
+        NetworkServer.Spawn(projectileTransform);
     }
 
     void Update()

@@ -37,11 +37,18 @@ public class PlayerMove : NetworkBehaviour
     }
 
     [Command]
-    private void CmdDash(float direction, bool isDashing)
+    private void CmdStartDash(float direction)
     {
-        if (isDashing == true) {
-            rb.AddForce(new Vector2(direction * 25, 0), ForceMode2D.Impulse);
-        }
+        rb.gravityScale = 0f;
+        rb.velocity = Vector2.zero;
+        rb.AddForce(new Vector2(direction * 25, 0), ForceMode2D.Impulse);
+    }
+
+    [Command]
+    private void CmdStopDash()
+    {
+        rb.gravityScale = normalGravity;
+        rb.velocity = Vector2.zero;
     }
 
     #endregion
@@ -81,15 +88,12 @@ public class PlayerMove : NetworkBehaviour
         }
 
         if (Input.GetMouseButtonDown(1) && isDashAvailable) {
-            if (dashCoroutine != null)
-                StopCoroutine(dashCoroutine);
-            dashCoroutine = Dash(0.1f, 2);
-            StartCoroutine(dashCoroutine);
+            // if (dashCoroutine != null)
+            //     StopCoroutine(dashCoroutine);
+            // dashCoroutine = Dash(0.1f, 2);
+            StartCoroutine(Dash(0.2f, 2));
+            // CmdDashCoroutine();
         }
-    }
-
-    void ResetJumpVelocity() {
-        StartCoroutine(SlowJump());
     }
 
     IEnumerator SlowJump() {
@@ -113,13 +117,10 @@ public class PlayerMove : NetworkBehaviour
     IEnumerator Dash(float dashDuration, float dashCooldown) {
         isDashing = true;
         isDashAvailable = false;
-        rb.gravityScale = 0f;
-        rb.velocity = Vector2.zero;
         Debug.Log("Start dashing");
         yield return new WaitForSeconds(dashDuration);
+        CmdStopDash();
         isDashing = false;
-        rb.gravityScale = normalGravity;
-        rb.velocity = Vector2.zero;
         Debug.Log("Stop Dashing");
         yield return new WaitForSeconds(dashCooldown);
         isDashAvailable = true;
@@ -131,7 +132,9 @@ public class PlayerMove : NetworkBehaviour
             return;
 
         CmdMove(horizontal, speed, isDashing, jumpVelocity);
-        CmdDash(horizontalDirection, isDashing);
+        if (isDashing == true) {
+            CmdStartDash(horizontalDirection);
+        }
     }
 
 }

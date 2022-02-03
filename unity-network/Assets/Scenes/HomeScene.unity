@@ -926,8 +926,8 @@ MonoBehaviour:
   runInBackground: 1
   autoStartServerBuild: 1
   serverTickRate: 64
-  offlineScene: 
-  onlineScene: 
+  offlineScene: Assets/Scenes/HomeScene.unity
+  onlineScene: Assets/Scenes/LobbyScene.unity
   transport: {fileID: 532462912}
   networkAddress: localhost
   maxConnections: 100
@@ -938,9 +938,9 @@ MonoBehaviour:
   spawnPrefabs:
   - {fileID: 4025979473627398746, guid: 2ba5df09447c09a4db7ca1954597ae79, type: 3}
   showRoomGUI: 1
-  minPlayers: 1
+  minPlayers: 2
   roomPlayerPrefab: {fileID: 936386492893168792, guid: b3c58c4b371ce4f6ca96d72b63e95e14, type: 3}
-  RoomScene: Assets/Scenes/HomeScene.unity
+  RoomScene: Assets/Scenes/LobbyScene.unity
   GameplayScene: Assets/Scenes/GameScene.unity
   _allPlayersReady: 0
   roomSlots: []

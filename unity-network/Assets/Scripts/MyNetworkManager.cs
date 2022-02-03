@@ -5,14 +5,11 @@ using Random = UnityEngine.Random;
 
 public class MyNetworkManager : NetworkRoomManager
 {
-    public static Action<bool> onServerJoin;
-    public static Action onServerLeave;
-    public static Action<bool> onRoomJoin;
-
-
     [SerializeField] private Transform PlayerListView = null;
     public GameObject PlayerCardPrefab = null;
     [SerializeField] private GameManager gManager;
+
+    #region Client
 
     public void UpdatePlayerList()
     {
@@ -40,6 +37,8 @@ public class MyNetworkManager : NetworkRoomManager
         foreach (GameObject card in pCards)
             Destroy(card);
     }
+
+    #endregion
 
     public override void OnRoomClientEnter()
     {
@@ -69,28 +68,11 @@ public class MyNetworkManager : NetworkRoomManager
         return base.OnRoomServerSceneLoadedForPlayer(conn, roomPlayer, gamePlayer);
     }
 
-    public override void OnStartHost()
-    {
-        base.OnStartHost();
-        onServerJoin?.Invoke(true);
-    }
-
-    public override void OnStopHost()
-    {
-        base.OnStopHost();
-        onServerLeave?.Invoke();
-    }
-
-    public override void OnStopClient()
-    {
-        base.OnStopClient();
-        onServerLeave?.Invoke();
-    }
-
     public override void OnClientConnect()
     {
         base.OnClientConnect();
-        onServerJoin?.Invoke(false);
+        PlayerListView = GameObject.FindGameObjectWithTag("PlayerList").transform;
+        //onServerJoin?.Invoke(false);
     }
 
 }

@@ -11,14 +11,14 @@ public class UIManager : MonoBehaviour
 
     private void Awake()
     {
-        MyNetworkManager.onServerJoin += OnJoin_SwitchCanvas;
-        MyNetworkManager.onServerLeave += OnLeave_SwitchCanvas;
+        //MyNetworkManager.onServerJoin += OnJoin_SwitchCanvas;
+        //MyNetworkManager.onServerLeave += OnLeave_SwitchCanvas;
     }
 
     private void OnDestroy()
     {
-        MyNetworkManager.onServerJoin -= OnJoin_SwitchCanvas;
-        MyNetworkManager.onServerLeave -= OnLeave_SwitchCanvas;
+        //MyNetworkManager.onServerJoin -= OnJoin_SwitchCanvas;
+        //MyNetworkManager.onServerLeave -= OnLeave_SwitchCanvas;
     }
 
     public void OnJoin_SwitchCanvas(bool isHost)

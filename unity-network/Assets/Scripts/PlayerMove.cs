@@ -23,10 +23,6 @@ public class PlayerMove : NetworkBehaviour
     [SerializeField] private float normalGravity;
 
     float horizontal;
-    float vertical;
-
-    private float moveX = 0f;
-    private float moveY = 0f;
 
     #region Server
 
@@ -60,14 +56,14 @@ public class PlayerMove : NetworkBehaviour
     }
 
     private void OnCollisionStay2D(Collision2D other) {
-        if (other.collider.CompareTag("Wall")) {
+        if (other.collider.CompareTag("Environment")) {
             canJump = true;
             Debug.Log("collision");
         }
     }
 
     private void OnCollisionExit2D(Collision2D other) {
-        if (other.collider.CompareTag("Wall")) {
+        if (other.collider.CompareTag("Environment")) {
             canJump = false;
             Debug.Log("collision");
         }
@@ -80,19 +76,13 @@ public class PlayerMove : NetworkBehaviour
 
         if (horizontal != 0)
             horizontalDirection = horizontal;
-        Debug.Log("Horizontal Direction: " + horizontalDirection);
         horizontal = Input.GetAxisRaw("Horizontal");
-        vertical = Input.GetAxisRaw("Vertical");
         if (Input.GetKeyDown(KeyCode.Space) && canJump) {
             StartCoroutine(Jump());
         }
 
         if (Input.GetMouseButtonDown(1) && isDashAvailable) {
-            // if (dashCoroutine != null)
-            //     StopCoroutine(dashCoroutine);
-            // dashCoroutine = Dash(0.1f, 2);
             StartCoroutine(Dash(0.2f, 2));
-            // CmdDashCoroutine();
         }
     }
 
@@ -110,7 +100,6 @@ public class PlayerMove : NetworkBehaviour
         jumpVelocity = 30f;
         rb.velocity = new Vector2(0f, jumpVelocity);
         yield return new WaitForSeconds(jumpPeakTiming);
-        Debug.Log("Jump start fall down");
         StartCoroutine(SlowJump());
     }
 

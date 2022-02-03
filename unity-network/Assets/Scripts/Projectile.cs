@@ -7,11 +7,14 @@ public class Projectile : NetworkBehaviour
 {
     [Server]
     private void OnTriggerEnter2D(Collider2D other) {
-        if (!other.TryGetComponent<Health>(out Health health)) return;
-
-        Debug.Log($"{netId} Collision on projectile");
-        health.DealDamage(10);
-        DestroySelf();
+        if (other.tag == "Environment") {
+            DestroySelf();
+        }
+        if (other.TryGetComponent<Player>(out Player player)) {
+            player.DealDamage(10);
+            DestroySelf();
+        }
+        // Debug.Log($"{netId} Collision on projectile");
     }
 
     [Server]

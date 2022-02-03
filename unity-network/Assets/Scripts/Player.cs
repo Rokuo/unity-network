@@ -12,24 +12,15 @@ public class Player : NetworkBehaviour
 
     [SyncVar(hook = nameof(HandleHealthUpdate))]
     private int currentHealth;
-    
+
     [SyncVar(hook = nameof(HandleDeathUpdate))] 
     public bool isDead;
 
+    [SyncVar]
     public int score;
 
-    [Server]
     void Start()
     {
-        // GameObject[] roomPlayers = GameObject.FindGameObjectsWithTag("RoomPlayer");
-        // Debug.Log("Player instantiate: " + roomPlayers.Length);
-        // foreach(GameObject roomPlayer in roomPlayers) {
-        //     if (roomPlayer.GetComponent<NetworkIdentity>().connectionToClient.connectionId == GetComponent<NetworkIdentity>().connectionToClient.connectionId) {
-        //         Debug.Log("Client change scene for: " + roomPlayer.GetComponent<NetworkIdentity>().connectionToClient.connectionId);
-        //         GetComponent<ColorPlayer>().playerColor = roomPlayer.GetComponent<SpriteRenderer>().material.color;
-        //     }
-        // }
-        SetDefaults();
         DontDestroyOnLoad(this);
     }
 
@@ -37,20 +28,13 @@ public class Player : NetworkBehaviour
         currentHealth = maxHealth;
     }
 
-    public override void OnStartClient()
-    {
-        base.OnStartClient();
-        Debug.Log("Start Client");
-        Debug.Log(transform.position);
-    }
-
     [Server]
-    public void SetDefaults()
+    public void SetDefaults(Vector3 position)
     {
         currentHealth = maxHealth;
         isDead = false;
         transform.gameObject.SetActive(true);
-        transform.position = new Vector3(0, 0, 0);
+        transform.position = position;
     }
 
     [Server]
@@ -80,7 +64,6 @@ public class Player : NetworkBehaviour
     }
 
     private void HandleDeathUpdate(bool _old, bool _new) {
-        // _old = _new;
         Debug.Log(isDead);
         if (isDead) {
             transform.gameObject.SetActive(false);

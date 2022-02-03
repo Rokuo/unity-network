@@ -41,6 +41,12 @@ public class MyNetworkManager : NetworkRoomManager
         NetworkClient.AddPlayer();
     }
 
+    public override void OnServerDisconnect(NetworkConnection conn)
+    {
+        base.OnServerDisconnect(conn);
+        Destroy(GameObject.FindWithTag("GameManager"));
+        Debug.Log("Server disconnect");
+    }
 
     public void ChangeScene(string sceneName)
     {

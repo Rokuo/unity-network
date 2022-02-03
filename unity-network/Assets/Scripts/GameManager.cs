@@ -7,7 +7,7 @@ public class GameManager : NetworkBehaviour
 {
     [SerializeField] private List<Player> players = new List<Player>();
     [SerializeField] private int currentSceneLevel = 1;
-    private int maxSceneLevel = 2;
+    private int maxSceneLevel = 3;
 
     void Start()
     {
@@ -58,9 +58,15 @@ public class GameManager : NetworkBehaviour
             // trigger change scene
             GameObject.FindWithTag("NetworkManager").GetComponent<MyNetworkManager>().ChangeScene(GetNextSceneName());
 
+            Transform spawnPoints = GameObject.FindGameObjectWithTag("SpawnPoints").GetComponent<Transform>();
+            List<Vector3> positions = new List<Vector3>();
+            foreach (Transform child in spawnPoints) {
+                positions.Add(child.position);
+            }
             // reset all players to default state
-            foreach(Player player in players) {
-                player.SetDefaults();
+            for (int i = 0; i < players.Count; i++) {
+                Debug.Log("Spawn pos: " + positions[i]);
+                players[i].SetDefaults(positions[i]);
             }
         }
 

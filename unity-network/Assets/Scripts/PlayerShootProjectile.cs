@@ -15,8 +15,6 @@ public class PlayerShootProjectile : NetworkBehaviour
         GameObject projectileTransform = Instantiate(pfProjectile, offsetPosition, Quaternion.identity);
 
         projectileTransform.GetComponent<ColorProjectile>().SetProjectileColor(GetComponent<ColorPlayer>().playerColor);
-        // projectileTransform.GetComponent<ColorProjectile>().material.color = transform.GetChild(0).GetComponent<SpriteRenderer>().material.color;
-        // Debug.Log(transform.GetChild(0).GetComponent<SpriteRenderer>().material.color);
         projectileTransform.GetComponent<Rigidbody2D>().velocity = shootDir * 10f;
 
         NetworkServer.Spawn(projectileTransform);

@@ -54,7 +54,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   syncMode: 0
   syncInterval: 0.1
-  speed: 10
+  speed: 13
   jumpVelocity: 0
   jumpRatio: 100
   jumpPeakTiming: 0.1

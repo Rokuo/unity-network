@@ -9,6 +9,8 @@ TagManager:
   - GameManager
   - NetworkManager
   - Environment
+  - SpawnPoint
+  - SpawnPoints
   layers:
   - Default
   - TransparentFX

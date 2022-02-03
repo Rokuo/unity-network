@@ -14,18 +14,6 @@ public class MyNetworkManager : NetworkRoomManager
     public GameObject PlayerCardPrefab = null;
     [SerializeField] private GameManager gManager;
 
-    public override void OnServerAddPlayer(NetworkConnection conn)
-    {
-        base.OnServerAddPlayer(conn);
-        //Debug.Log($"On add Player for lobby addr: {conn.address}");
-    }
-
-    public override void OnRoomClientConnect()
-    {
-        base.OnRoomClientConnect();
-        Debug.Log($"OnRoomClientConnect {roomSlots.Count}");
-    }
-
     public void UpdatePlayerList()
     {
         Debug.Log($"[DEBUG|Update List] room slot : {roomSlots.Count}");
@@ -58,15 +46,6 @@ public class MyNetworkManager : NetworkRoomManager
         base.OnRoomClientEnter();
         ResetPlayerList();
         UpdatePlayerList();
-        //PlayerCard playerCard = Instantiate(PlayerCardPrefab, PlayerListView).GetComponent<PlayerCard>();
-        //string playerName = roomSlots[roomSlots.Count - 1].GetInstanceID().ToString();
-        //if (roomSlots[roomSlots.Count - 1].hasAuthority)
-        //{
-        //    playerCard.SetPlayerInfo(PlayerPrefs.GetString("DisplayName"), false, true);
-        //    playerCard.SetRoomPlayer(roomSlots[roomSlots.Count - 1] as MyNetworkRoomPlayer);
-        //}
-        //else
-        //    playerCard.SetPlayerInfo(playerName, false, false);
     }
 
     public override void OnRoomClientExit()
@@ -113,19 +92,5 @@ public class MyNetworkManager : NetworkRoomManager
         base.OnClientConnect();
         onServerJoin?.Invoke(false);
     }
-
-    // public override void OnServerConnect(NetworkConnection conn)
-    // {
-    //     //base.OnServerConnect(conn);
-    //     Debug.Log($"On Connect to server : {conn.address}");
-    //     //conn.
-    // }
-
-    // public override void OnClientConnect()
-    // {
-    //     base.OnClientConnect();
-    //     Debug.Log($"On Connect to server :");
-
-    // }
 
 }

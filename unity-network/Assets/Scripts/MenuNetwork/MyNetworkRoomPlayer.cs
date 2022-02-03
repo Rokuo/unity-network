@@ -36,35 +36,14 @@ public class MyNetworkRoomPlayer : NetworkRoomPlayer
 
     #endregion
 
+    #region Server
+
     [Command]
     public void CmdDisplayName(string newName)
     {
         displayName = newName;
     }
 
-    public override void OnStartClient()
-    {
-        //Debug.Log($"OnStartClient {gameObject}");
-    }
-
-    public override void OnClientEnterRoom()
-    {
-        //Debug.Log($"NetworkRoomPlayer Awake on server, Authority : {hasAuthority}");
-    }
-
-    public override void OnClientExitRoom()
-    {
-        Debug.Log($"OnClientExitRoom ");
-    }
-
-    public override void OnStopClient()
-    {
-        base.OnStopClient();
-    }
-
-    public override void IndexChanged(int oldIndex, int newIndex)
-    {
-        Debug.Log($"IndexChanged {newIndex}");
-    }
+    #endregion
 }
 

@@ -17,7 +17,7 @@ public class MyNetworkManager : NetworkRoomManager
     public override void OnServerAddPlayer(NetworkConnection conn)
     {
         base.OnServerAddPlayer(conn);
-        Debug.Log($"On add Player for lobby addr: {conn.address}");
+        //Debug.Log($"On add Player for lobby addr: {conn.address}");
     }
 
     public override void OnRoomClientConnect()
@@ -28,7 +28,6 @@ public class MyNetworkManager : NetworkRoomManager
 
     public override void OnRoomClientEnter()
     {
-        // can do room thing here client enter
         base.OnRoomClientEnter();
         PlayerCard playerCard = Instantiate(PlayerCardPrefab, PlayerListView).GetComponent<PlayerCard>();
         string playerName = roomSlots[roomSlots.Count - 1].GetInstanceID().ToString();
@@ -39,11 +38,11 @@ public class MyNetworkManager : NetworkRoomManager
         }
         else
             playerCard.SetPlayerInfo(playerName, false, false);
-
     }
 
     public override void OnRoomClientExit()
     {
+        Debug.Log($"OnRoomClientExit");
         base.OnRoomClientExit();
     }
 

@@ -30,12 +30,11 @@ public class MyNetworkManager : NetworkRoomManager
     {
         // can do room thing here client enter
         base.OnRoomClientEnter();
-        Debug.Log($"OnRoomClientEnter : {roomSlots.Count} last to enter :");
         PlayerCard playerCard = Instantiate(PlayerCardPrefab, PlayerListView).GetComponent<PlayerCard>();
         string playerName = roomSlots[roomSlots.Count - 1].GetInstanceID().ToString();
         if (roomSlots[roomSlots.Count - 1].hasAuthority)
         {
-            playerCard.SetPlayerInfo(playerName, false, true);
+            playerCard.SetPlayerInfo(PlayerPrefs.GetString("DisplayName"), false, true);
             playerCard.SetRoomPlayer(roomSlots[roomSlots.Count - 1] as MyNetworkRoomPlayer);
         }
         else

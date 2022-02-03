@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using Mirror;
 using UnityEngine;
 
-public class LeaveServer : NetworkBehaviour
+public class LeaveServer : MonoBehaviour
 {
     public void OnClickLeaveServer()
     {

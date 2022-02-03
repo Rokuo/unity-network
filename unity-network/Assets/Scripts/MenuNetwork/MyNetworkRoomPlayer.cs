@@ -18,7 +18,7 @@ public class MyNetworkRoomPlayer : NetworkRoomPlayer
 
     public override void OnClientExitRoom()
     {
-        //Debug.Log($"OnClientExitRoom ");
+        Debug.Log($"OnClientExitRoom ");
         //RPCRemoveCard(index);
     }
 

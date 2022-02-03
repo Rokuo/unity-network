@@ -1,17 +1,20 @@
 ﻿<Properties StartupConfiguration="{1BF08A07-4458-0E59-1267-08A487B916C0}|">
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/MenuNetwork/LeaveServer.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Mirror/Runtime/NetworkBehaviour.cs">
     <Files>
       <File FileName="Assets/Scripts/ColorPlayer.cs" Line="17" Column="50" />
-      <File FileName="Assets/Scripts/PlayerMove.cs" Line="14" Column="37" />
+      <File FileName="Assets/Scripts/PlayerMove.cs" Line="80" Column="1" />
       <File FileName="Assets/Mirror/Runtime/NetworkManagerHUD.cs" Line="1" Column="1" />
       <File FileName="Assets/Mirror/Runtime/NetworkIdentity.cs" Line="126" Column="40" />
-      <File FileName="Assets/Scripts/MenuNetwork/PlayerCard.cs" Line="28" Column="36" />
-      <File FileName="Assets/Mirror/Components/NetworkRoomManager.cs" Line="142" Column="40" NotebookId="1" />
-      <File FileName="Assets/Scripts/MyNetworkManager.cs" Line="87" Column="6" NotebookId="1" />
-      <File FileName="Assets/Scripts/MenuNetwork/PlayerName.cs" Line="12" Column="64" NotebookId="1" />
-      <File FileName="Assets/Scripts/MenuNetwork/MyNetworkRoomPlayer.cs" Line="36" Column="18" NotebookId="1" />
+      <File FileName="Assets/Scripts/MenuNetwork/PlayerCard.cs" Line="24" Column="6" />
+      <File FileName="Assets/Scripts/MenuNetwork/PlayerList.cs" Line="20" Column="58" />
+      <File FileName="Assets/Mirror/Runtime/NetworkBehaviour.cs" Line="698" Column="1" />
+      <File FileName="Assets/Mirror/Components/NetworkRoomManager.cs" Line="643" Column="29" NotebookId="1" />
+      <File FileName="Assets/Scripts/MyNetworkManager.cs" Line="25" Column="1" NotebookId="1" />
+      <File FileName="Assets/Scripts/MenuNetwork/MyNetworkRoomPlayer.cs" Line="33" Column="21" NotebookId="1" />
+      <File FileName="Assets/Scripts/MenuNetwork/PlayerName.cs" Line="12" Column="59" NotebookId="1" />
       <File FileName="Assets/Mirror/Components/NetworkRoomPlayer.cs" Line="104" Column="63" NotebookId="1" />
-      <File FileName="Assets/Scripts/MenuNetwork/LeaveServer.cs" Line="8" Column="37" NotebookId="1" />
+      <File FileName="Assets/Scripts/MenuNetwork/LeaveServer.cs" Line="10" Column="64" NotebookId="1" />
+      <File FileName="Assets/Scripts/MenuNetwork/UIManager.cs" Line="6" Column="39" NotebookId="1" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />

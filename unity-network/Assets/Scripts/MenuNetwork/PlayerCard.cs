@@ -6,9 +6,9 @@ using UnityEngine.UI;
 
 public class PlayerCard : MonoBehaviour
 {
-    [SerializeField] TMP_Text displayName = null;
-    [SerializeField] Toggle ready = null;
-    private MyNetworkRoomPlayer roomPlayer = null;
+    [SerializeField] private TMP_Text displayName = null;
+    [SerializeField] private Toggle ready = null;
+    public MyNetworkRoomPlayer roomPlayer = null;
 
 
     public void SetPlayerInfo(string name, bool isReady, bool hasAuthority)
@@ -16,6 +16,11 @@ public class PlayerCard : MonoBehaviour
         displayName.text = name;
         ready.isOn = isReady;
         ready.interactable = hasAuthority;
+    }
+
+    public void SetName(string name)
+    {
+        displayName.text = name;
     }
 
     public void SetRoomPlayer(MyNetworkRoomPlayer networkRoomPlayer)

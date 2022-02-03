@@ -5,6 +5,43 @@ using UnityEngine;
 
 public class MyNetworkRoomPlayer : NetworkRoomPlayer
 {
+    [SyncVar(hook = nameof(UpdateDisplayName))]
+    public string displayName;
+
+    private PlayerCard playerCard = null;
+    public PlayerCard PlayerCard {
+        get { return playerCard; }
+        set { playerCard = value; }
+    }
+
+    #region SyncVar
+
+    public void UpdateDisplayName(string oldDisplayName, string newDisplayName)
+    {
+        GameObject[] cards = GameObject.FindGameObjectsWithTag("PlayerCard");
+        foreach (GameObject item in cards)
+        {
+            PlayerCard playerCard = item.GetComponent<PlayerCard>();
+            if (playerCard.roomPlayer == this)
+                playerCard.SetName(newDisplayName);
+        }
+    }
+
+    public override void ReadyStateChanged(bool oldReadyState, bool newReadyState)
+    {
+        Debug.Log($"ReadyStateChanged {newReadyState}");
+        if (hasAuthority)
+            CmdChangeReadyState(newReadyState);
+    }
+
+    #endregion
+
+    [Command]
+    public void CmdDisplayName(string newName)
+    {
+        displayName = newName;
+    }
+
     public override void OnStartClient()
     {
         //Debug.Log($"OnStartClient {gameObject}");
@@ -12,42 +49,22 @@ public class MyNetworkRoomPlayer : NetworkRoomPlayer
 
     public override void OnClientEnterRoom()
     {
-        Debug.Log($"OnClientEnterRoom");
         //Debug.Log($"NetworkRoomPlayer Awake on server, Authority : {hasAuthority}");
-    }
-
-    [Command]
-    public void CmdRemoveCard()
-    {
-        RPCRemoveCard(index);
     }
 
     public override void OnClientExitRoom()
     {
         Debug.Log($"OnClientExitRoom ");
-        CmdRemoveCard();
+    }
+
+    public override void OnStopClient()
+    {
+        base.OnStopClient();
     }
 
     public override void IndexChanged(int oldIndex, int newIndex)
     {
         Debug.Log($"IndexChanged {newIndex}");
-    }
-
-    public override void ReadyStateChanged(bool oldReadyState, bool newReadyState)
-    {
-        Debug.Log($"ReadyStateChanged {newReadyState}");
-        CmdChangeReadyState(newReadyState);
-    }
-
-    [ClientRpc]
-    public void RPCRemoveCard(int position)
-    {
-        Debug.Log($"RPC remove card index : {position}");
-        GameObject[] playerCards = GameObject.FindGameObjectsWithTag("PlayerCard");
-        GameObject toRemove = null;
-        Debug.Log($"Removing {playerCards.Length - (index + 1)}");
-        toRemove = playerCards[playerCards.Length - (index + 1)];
-        Destroy(toRemove);
     }
 }
 

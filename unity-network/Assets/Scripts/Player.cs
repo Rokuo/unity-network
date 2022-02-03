@@ -33,7 +33,6 @@ public class Player : NetworkBehaviour
     {
         currentHealth = maxHealth;
         isDead = false;
-        transform.gameObject.SetActive(true);
         transform.position = position;
     }
 

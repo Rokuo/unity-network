@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using Mirror;
+using TMPro;
 
 public class GameManager : NetworkBehaviour
 {
@@ -39,6 +40,25 @@ public class GameManager : NetworkBehaviour
         return ("GameScene" + currentSceneLevel);
     }
 
+    IEnumerator TransitionCoroutine(Player winner)
+    {
+        TMP_Text text = GameObject.FindGameObjectWithTag("UI").GetComponentInChildren<TMP_Text>();
+        text.GetComponent<StatusWinner>().SetWinnerText(winner.name);
+        yield return new WaitForSeconds(3f);
+        text.GetComponent<StatusWinner>().SetWinnerText(string.Empty);
+        GameObject.FindWithTag("NetworkManager").GetComponent<MyNetworkManager>().ChangeScene(GetNextSceneName());
+        Transform spawnPoints = GameObject.FindGameObjectWithTag("SpawnPoints").GetComponent<Transform>();
+        List<Vector3> positions = new List<Vector3>();
+        foreach (Transform child in spawnPoints) {
+            positions.Add(child.position);
+        }
+        // reset all players to default state
+        for (int i = 0; i < players.Count; i++) {
+            Debug.Log("Spawn pos: " + positions[i]);
+            players[i].SetDefaults(positions[i]);
+        }
+    }
+
     private void CheckDeathPlayer()
     {
         int numberPlayerAlive = 0;
@@ -56,20 +76,8 @@ public class GameManager : NetworkBehaviour
             // update score of the winner
             players[indexWinner].SetPlayerScore();
             // trigger change scene
-            GameObject.FindWithTag("NetworkManager").GetComponent<MyNetworkManager>().ChangeScene(GetNextSceneName());
-
-            Transform spawnPoints = GameObject.FindGameObjectWithTag("SpawnPoints").GetComponent<Transform>();
-            List<Vector3> positions = new List<Vector3>();
-            foreach (Transform child in spawnPoints) {
-                positions.Add(child.position);
-            }
-            // reset all players to default state
-            for (int i = 0; i < players.Count; i++) {
-                Debug.Log("Spawn pos: " + positions[i]);
-                players[i].SetDefaults(positions[i]);
-            }
+            StartCoroutine(TransitionCoroutine(players[indexWinner]));
         }
-
     }
 
 }

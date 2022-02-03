@@ -11,6 +11,7 @@ TagManager:
   - Environment
   - SpawnPoint
   - SpawnPoints
+  - UI
   layers:
   - Default
   - TransparentFX

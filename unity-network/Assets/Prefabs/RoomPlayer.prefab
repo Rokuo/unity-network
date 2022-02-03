@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 936386492893168792}
   m_Layer: 0
   m_Name: RoomPlayer
-  m_TagString: Untagged
+  m_TagString: RoomPlayer
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -66,3 +66,4 @@ MonoBehaviour:
   showRoomGUI: 1
   readyToBegin: 0
   index: 0
+  playerList: {fileID: 0}

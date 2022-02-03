@@ -7,17 +7,19 @@ public class MyNetworkRoomPlayer : NetworkRoomPlayer
 {
     public override void OnStartClient()
     {
-        Debug.Log($"OnStartClient {gameObject}");
+        //Debug.Log($"OnStartClient {gameObject}");
     }
 
     public override void OnClientEnterRoom()
     {
         Debug.Log($"OnClientEnterRoom");
+        //Debug.Log($"NetworkRoomPlayer Awake on server, Authority : {hasAuthority}");
     }
 
     public override void OnClientExitRoom()
     {
-        Debug.Log($"OnClientExitRoom ");
+        //Debug.Log($"OnClientExitRoom ");
+        //RPCRemoveCard(index);
     }
 
     public override void IndexChanged(int oldIndex, int newIndex)
@@ -28,11 +30,21 @@ public class MyNetworkRoomPlayer : NetworkRoomPlayer
     public override void ReadyStateChanged(bool oldReadyState, bool newReadyState)
     {
         Debug.Log($"ReadyStateChanged {newReadyState}");
+        CmdChangeReadyState(newReadyState);
     }
 
-    public override void OnGUI()
+    //[TargetRpc]
+    //public void TargetEnableReadyButton(NetworkConnection target)
+    //{
+    //    GameObject[] playerCards = GameObject.FindGameObjectsWithTag("PlayerCard");
+    //    Debug.Log($"index : {playerCards.Length}");
+    //    playerCards[index].GetComponent<PlayerCard>().SetInteractable(true);
+    //}
+
+    [ClientRpc]
+    public void RPCRemoveCard(int position)
     {
-        base.OnGUI();
+        Debug.Log($"RPC remove card index : {position}");
     }
 }
 

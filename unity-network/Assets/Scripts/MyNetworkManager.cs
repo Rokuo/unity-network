@@ -7,9 +7,11 @@ public class MyNetworkManager : NetworkRoomManager
 {
     public static Action<bool> onServerJoin;
     public static Action onServerLeave;
+    public static Action<bool> onRoomJoin;
+
 
     [SerializeField] private Transform PlayerListView = null;
-    public GameObject PlayerTagPrefab = null;
+    public GameObject PlayerCardPrefab = null;
     [SerializeField] private GameManager gManager;
 
     public override void OnServerAddPlayer(NetworkConnection conn)
@@ -21,13 +23,29 @@ public class MyNetworkManager : NetworkRoomManager
     public override void OnRoomClientConnect()
     {
         base.OnRoomClientConnect();
-        Debug.Log($"OnRoomClientConnect");
+        Debug.Log($"OnRoomClientConnect {roomSlots.Count}");
     }
 
     public override void OnRoomClientEnter()
     {
+        // can do room thing here client enter
         base.OnRoomClientEnter();
-        Debug.Log($"OnRoomClientEnter");
+        Debug.Log($"OnRoomClientEnter : {roomSlots.Count} last to enter :");
+        PlayerCard playerCard = Instantiate(PlayerCardPrefab, PlayerListView).GetComponent<PlayerCard>();
+        string playerName = roomSlots[roomSlots.Count - 1].GetInstanceID().ToString();
+        if (roomSlots[roomSlots.Count - 1].hasAuthority)
+        {
+            playerCard.SetPlayerInfo(playerName, false, true);
+            playerCard.SetRoomPlayer(roomSlots[roomSlots.Count - 1] as MyNetworkRoomPlayer);
+        }
+        else
+            playerCard.SetPlayerInfo(playerName, false, false);
+
+    }
+
+    public override void OnRoomClientExit()
+    {
+        base.OnRoomClientExit();
     }
 
     public override bool OnRoomServerSceneLoadedForPlayer(NetworkConnection conn, GameObject roomPlayer, GameObject gamePlayer)

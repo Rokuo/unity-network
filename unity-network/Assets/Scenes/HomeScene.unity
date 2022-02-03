@@ -369,7 +369,7 @@ MonoBehaviour:
   m_Content: {fileID: 851307846}
   m_Horizontal: 1
   m_Vertical: 0
-  m_MovementType: 1
+  m_MovementType: 2
   m_Elasticity: 0.1
   m_Inertia: 1
   m_DecelerationRate: 0.135
@@ -932,8 +932,8 @@ MonoBehaviour:
   _allPlayersReady: 0
   roomSlots: []
   clientIndex: 0
-  PlayerListView: {fileID: 0}
-  PlayerTagPrefab: {fileID: 3551848870004609361, guid: 9245297fe819a464a825e8d6d573e9b2, type: 3}
+  PlayerListView: {fileID: 851307846}
+  PlayerCardPrefab: {fileID: 7852068091929511914, guid: 72de495792c334369ba5e7772f8c51df, type: 3}
   gManager: {fileID: 0}
 --- !u!114 &532462914
 MonoBehaviour:
@@ -1555,7 +1555,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 851307845}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 30649d3a9faa99c48a7b1166b86bf2a0, type: 3}
+  m_Script: {fileID: 11500000, guid: 59f8146938fff824cb5fd77236b75775, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   m_Padding:

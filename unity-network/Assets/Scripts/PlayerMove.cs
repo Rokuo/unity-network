@@ -3,12 +3,12 @@ using System.Collections.Generic;
 using Mirror;
 using UnityEngine;
 
-
 public class PlayerMove : NetworkBehaviour
 {
     private Rigidbody2D rb;
     [SerializeField] private int speed;
     private Vector3 moveDirection;
+
 
     private bool isDashing = false;
     private bool isDashAvailable = true;
@@ -17,7 +17,7 @@ public class PlayerMove : NetworkBehaviour
     [SerializeField] private float jumpVelocity;
     [SerializeField] private float jumpRatio;
     [SerializeField] private float jumpPeakTiming;
-    private bool canJump = true;
+    [SerializeField] private bool canJump = true;
 
     float horizontalDirection = 1;
     [SerializeField] private float normalGravity;

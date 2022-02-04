@@ -12,6 +12,8 @@ TagManager:
   - SpawnPoint
   - SpawnPoints
   - UI
+  - PlayerCard
+  - PlayerList
   layers:
   - Default
   - TransparentFX

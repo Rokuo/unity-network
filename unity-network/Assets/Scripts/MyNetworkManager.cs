@@ -1,18 +1,52 @@
-using System.Collections;
-using System.Collections.Generic;
+using System;
 using Mirror;
-using TMPro;
 using UnityEngine;
+using Random = UnityEngine.Random;
 
 public class MyNetworkManager : NetworkRoomManager
 {
     [SerializeField] private Transform PlayerListView = null;
-    public GameObject PlayerTagPrefab = null;
+    public GameObject PlayerCardPrefab = null;
+    [SerializeField] private GameManager gManager;
 
-    public override void OnServerAddPlayer(NetworkConnection conn)
+    #region Client
+
+    public void UpdatePlayerList()
     {
-        base.OnServerAddPlayer(conn);
-        Debug.Log($"On add Player for lobby addr: {conn.connectionId}");
+        Debug.Log($"[DEBUG|Update List] room slot : {roomSlots.Count}");
+        for (int index = 0;  index < roomSlots.Count; index += 1)
+        {
+            GameObject card = Instantiate(PlayerCardPrefab, PlayerListView);
+            PlayerCard playerCard = card.GetComponent<PlayerCard>();
+            string playerName = roomSlots[index].GetInstanceID().ToString();
+            MyNetworkRoomPlayer room = roomSlots[index] as MyNetworkRoomPlayer;
+            if (room.hasAuthority)
+            {
+                playerCard.SetPlayerInfo(PlayerPrefs.GetString("DisplayName"), false, true);
+                playerCard.SetRoomPlayer(room);
+                room.CmdDisplayName(PlayerPrefs.GetString("DisplayName"));
+            }
+            else
+                playerCard.SetPlayerInfo(room.displayName, false, false);
+        }
+    }
+
+    public void ResetPlayerList()
+    {
+        GameObject[] pCards = GameObject.FindGameObjectsWithTag("PlayerCard");
+        foreach (GameObject card in pCards)
+            Destroy(card);
+    }
+
+    #endregion
+
+    public override void OnRoomClientEnter()
+    {
+        // base.OnServerAddPlayer(conn);
+        // Debug.Log($"On add Player for lobby addr: {conn.connectionId}");
+        base.OnRoomClientEnter();
+        ResetPlayerList();
+        UpdatePlayerList();
     }
 
     public override void OnRoomServerSceneChanged(string sceneName)
@@ -27,6 +61,13 @@ public class MyNetworkManager : NetworkRoomManager
         // }
     }
 
+    public override void OnRoomClientExit()
+    {
+        base.OnRoomClientExit();
+        ResetPlayerList();
+        UpdatePlayerList();
+    }
+
     public override bool OnRoomServerSceneLoadedForPlayer(NetworkConnection conn, GameObject roomPlayer, GameObject gamePlayer)
     {
         Debug.Log("SceneLoadedForPlayer");
@@ -38,6 +79,7 @@ public class MyNetworkManager : NetworkRoomManager
     {
         base.OnClientConnect();
         Debug.Log("On Client Connect");
+        PlayerListView = GameObject.FindGameObjectWithTag("PlayerList").transform;
         NetworkClient.AddPlayer();
     }
 
@@ -52,5 +94,4 @@ public class MyNetworkManager : NetworkRoomManager
     {
         ServerChangeScene(sceneName);
     }
-
 }

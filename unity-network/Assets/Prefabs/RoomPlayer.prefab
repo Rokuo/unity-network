@@ -59,7 +59,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1588750985201798}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 41fc608223969754e817c29908fdb1d3, type: 3}
+  m_Script: {fileID: 11500000, guid: 52551acd3af7144199cf4829e709ca68, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   syncMode: 0
@@ -67,6 +67,7 @@ MonoBehaviour:
   showRoomGUI: 1
   readyToBegin: 0
   index: 0
+  displayName: 
 --- !u!114 &8619621615749331084
 MonoBehaviour:
   m_ObjectHideFlags: 0

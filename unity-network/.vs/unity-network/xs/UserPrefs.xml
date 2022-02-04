@@ -1,15 +1,22 @@
 ﻿<Properties StartupConfiguration="{1BF08A07-4458-0E59-1267-08A487B916C0}|">
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Mirror/Examples/Room/Scripts/PlayerController.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/MyNetworkManager.cs">
     <Files>
-      <File FileName="Assets/Scripts/MyNetworkManager.cs" Line="18" Column="49" />
-      <File FileName="Assets/Mirror/Runtime/NetworkManager.cs" Line="1267" Column="47" />
-      <File FileName="Assets/Scripts/PlayerMove.cs" Line="6" Column="40" />
-      <File FileName="Assets/Mirror/Examples/Room/Scripts/PlayerController.cs" Line="9" Column="23" NotebookId="1" />
+      <File FileName="Assets/Scripts/MyNetworkManager.cs" Line="97" Column="26" />
+      <File FileName="Assets/Scripts/ColorPlayer.cs" />
+      <File FileName="Assets/Scripts/PlayerMove.cs" />
+      <File FileName="Assets/Scripts/MenuNetwork/PlayerCard.cs" />
+      <File FileName="Assets/Scripts/MenuNetwork/PlayerList.cs" />
+      <File FileName="Assets/Mirror/Runtime/NetworkBehaviour.cs" Line="528" Column="40" />
+      <File FileName="Assets/Mirror/Components/NetworkRoomManager.cs" Line="685" Column="27" NotebookId="1" />
+      <File FileName="Assets/Scripts/MenuNetwork/MyNetworkRoomPlayer.cs" NotebookId="1" />
+      <File FileName="Assets/Scripts/MenuNetwork/PlayerName.cs" NotebookId="1" />
+      <File FileName="Assets/Scripts/MenuNetwork/LeaveServer.cs" NotebookId="1" />
+      <File FileName="Assets/Scripts/MenuNetwork/UIManager.cs" NotebookId="1" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="3d9deb6a-e39f-4f54-a4ba-040ad4638911" />
+  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="222af84c-05ad-40a1-802b-89691fc4230a" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>

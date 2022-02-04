@@ -8,6 +8,7 @@ public class GameManager : NetworkBehaviour
 {
     [SerializeField] private List<Player> players = new List<Player>();
     [SerializeField] private int currentSceneLevel = 1;
+    [SerializeField] private int maxScore = 3;
     private int maxSceneLevel = 3;
 
     void Start()
@@ -59,6 +60,15 @@ public class GameManager : NetworkBehaviour
         }
     }
 
+    IEnumerator TransitionEndGame(Player winner)
+    {
+        TMP_Text text = GameObject.FindGameObjectWithTag("UI").GetComponentInChildren<TMP_Text>();
+        text.GetComponent<StatusWinner>().SetWinnerText(winner.name + " wins the game.");
+        yield return new WaitForSeconds(3f);
+        text.GetComponent<StatusWinner>().SetWinnerText(string.Empty);
+        GameObject.FindWithTag("NetworkManager").GetComponent<MyNetworkManager>().StopHost();
+    }
+
     private void CheckDeathPlayer()
     {
         int numberPlayerAlive = 0;
@@ -75,8 +85,16 @@ public class GameManager : NetworkBehaviour
         if (numberPlayerAlive == 1) {
             // update score of the winner
             players[indexWinner].SetPlayerScore();
-            // trigger change scene
-            StartCoroutine(TransitionCoroutine(players[indexWinner]));
+            if (players[indexWinner].score == maxScore)
+            {
+                // back to home
+                StartCoroutine(TransitionEndGame(players[indexWinner]));
+            }
+            else
+            {
+                // trigger change scene
+                StartCoroutine(TransitionCoroutine(players[indexWinner]));
+            }
         }
     }
 

@@ -64,12 +64,12 @@ namespace Mirror.Examples.Tanks
         // For faster prototyping, we will have these as buttons, but eventually they will be in your raycast, or trigger code
         public void ButtonDeath()
         {
-            playerScript.CmdPlayerStatus(true);
+            //playerScript.CmdPlayerStatus(true);
         }
 
         public void ButtonRespawn()
         {
-            playerScript.CmdPlayerStatus(false);
+            //playerScript.CmdPlayerStatus(false);
         }
 
         public void SetupScene()
@@ -87,16 +87,16 @@ namespace Mirror.Examples.Tanks
             else if (playerScript)
             {
                 // quick check to make sure playerScript is set before checking its variables to prevent errors
-                if (playerScript.isDead == true)
-                {
-                    buttonRespawn.interactable = true;
-                    buttonDeath.interactable = false;
-                }
-                else if (playerScript.isDead == false)
-                {
-                    buttonRespawn.interactable = false;
-                    buttonDeath.interactable = true;
-                }
+                //if (playerScript.isDead == true)
+                //{
+                //    buttonRespawn.interactable = true;
+                //    buttonDeath.interactable = false;
+                //}
+                //else if (playerScript.isDead == false)
+                //{
+                //    buttonRespawn.interactable = false;
+                //    buttonDeath.interactable = true;
+                //}
             }
         }
      }

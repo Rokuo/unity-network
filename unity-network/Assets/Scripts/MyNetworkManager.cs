@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using Mirror;
+using Steamworks;
 using TMPro;
 using UnityEngine;
 
@@ -114,7 +115,7 @@ public class MyNetworkManager : NetworkRoomManager
     {
         base.OnStartHost();
         Instantiate(GameManagerPrefab);
-        Debug.Log("Ouais le start host ouais");
+        Debug.Log($"Ouais le start host ouais {SteamUser.GetSteamID().ToString()}");
     }
 
     public override void OnStopHost()

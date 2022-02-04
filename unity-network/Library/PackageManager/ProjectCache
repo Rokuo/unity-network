@@ -5,21 +5,118 @@ m_ProjectFiles:
     m_ContentTrackingEnabled: 1
     m_ModificationDate:
       serializedVersion: 2
-      ticks: 637795293350000000
-    m_Hash: 2493206812
+      ticks: 637795982490000000
+    m_Hash: 447719624
   m_LockFileStatus:
     m_FilePath: /Users/alexandre/delivery/epitech/unity-network/unity-network/Packages/packages-lock.json
     m_PathExists: 1
     m_ContentTrackingEnabled: 1
     m_ModificationDate:
       serializedVersion: 2
-      ticks: 637795891380000000
-    m_Hash: 2548674612
+      ticks: 637795982500000000
+    m_Hash: 3157291855
 m_EmbeddedPackageManifests:
   m_ManifestsStatus: {}
 m_PackageAssets:
   m_Packages:
     m_ResolvedPackages:
+    - packageId: com.mirror.steamworks.net@https://github.com/Chykary/FizzySteamworks.git?path=/com.mirror.steamworks.net
+      testable: 0
+      isDirectDependency: 1
+      version: 5.0.1
+      source: 5
+      resolvedPath: /Users/alexandre/delivery/epitech/unity-network/unity-network/Library/PackageCache/com.mirror.steamworks.net@71be1e3246
+      assetPath: Packages/com.mirror.steamworks.net
+      name: com.mirror.steamworks.net
+      displayName: FizzySteamworks
+      author:
+        name: Mirror Community
+        email: 
+        url: https://discord.gg/XXWRwf2kNd
+      category: 
+      type: 
+      description: FizzySteamworks is a Mirror transport for use with Steamworks.NET.
+        You must have already installed Steamworks.NET, you can get Steamworks.NET
+        from git by following the instructions documented in the GitHub you aquired
+        this from.
+      status: 4
+      errors: []
+      versions:
+        all: []
+        compatible: []
+        verified: 
+      dependencies: []
+      resolvedDependencies: []
+      keywords:
+      - steam
+      - steamworks
+      registry:
+        id: 
+        name: 
+        url: 
+        scopes: []
+        isDefault: 0
+        capabilities: 0
+      hasRegistry: 0
+      hideInEditor: 1
+      entitlements:
+        isAllowed: 1
+      isAssetStorePackage: 0
+      datePublishedTicks: 0
+      documentationUrl: https://github.com/Chykary/FizzySteamworks
+      hasRepository: 1
+      repository:
+        type: git
+        url: git+https://github.com/Chykary/FizzySteamworks.git?path=/com.mirror.steamworks.net
+        revision: 
+        path: 
+    - packageId: com.rlabrecque.steamworks.net@https://github.com/rlabrecque/Steamworks.NET.git?path=/com.rlabrecque.steamworks.net#20.0.0
+      testable: 0
+      isDirectDependency: 1
+      version: 20.0.0
+      source: 5
+      resolvedPath: /Users/alexandre/delivery/epitech/unity-network/unity-network/Library/PackageCache/com.rlabrecque.steamworks.net@3f69b5e58e
+      assetPath: Packages/com.rlabrecque.steamworks.net
+      name: com.rlabrecque.steamworks.net
+      displayName: Steamworks.NET
+      author:
+        name: Riley Labrecque
+        email: support@rileylabrecque.com
+        url: https://steamworks.github.io
+      category: 
+      type: 
+      description: Steamworks.NET is a C# Wrapper for Valve's Steamworks API.
+      status: 4
+      errors: []
+      versions:
+        all: []
+        compatible: []
+        verified: 
+      dependencies: []
+      resolvedDependencies: []
+      keywords:
+      - steam
+      - steamworks
+      registry:
+        id: 
+        name: 
+        url: 
+        scopes: []
+        isDefault: 0
+        capabilities: 0
+      hasRegistry: 0
+      hideInEditor: 1
+      entitlements:
+        isAllowed: 1
+      isAssetStorePackage: 0
+      datePublishedTicks: 0
+      documentationUrl: 
+      hasRepository: 1
+      repository:
+        type: git
+        url: git+https://github.com/rlabrecque/Steamworks.NET.git?path=/com.rlabrecque.steamworks.net
+        revision: 
+        path: 
     - packageId: com.unity.2d.animation@5.0.4
       testable: 0
       isDirectDependency: 1

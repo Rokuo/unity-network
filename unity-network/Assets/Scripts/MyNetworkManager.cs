@@ -7,7 +7,6 @@ public class MyNetworkManager : NetworkRoomManager
 {
     [SerializeField] private Transform PlayerListView = null;
     public GameObject PlayerCardPrefab = null;
-    [SerializeField] private GameManager gManager;
 
     #region Client
 
@@ -52,13 +51,6 @@ public class MyNetworkManager : NetworkRoomManager
     public override void OnRoomServerSceneChanged(string sceneName)
     {        
         base.OnRoomServerSceneChanged(sceneName);
-        // GameObject[] roomPlayers = GameObject.FindGameObjectsWithTag("RoomPlayer");
-        // foreach(GameObject roomPlayer in roomPlayers) {
-        //     if (roomPlayer.GetComponent<NetworkIdentity>().isClientOnly)
-        //         Debug.Log("Server change scene for: " + roomPlayer.GetComponent<NetworkIdentity>().connectionToServer.connectionId);
-        //     else
-        //         Debug.Log("Client change scene for: " + roomPlayer.GetComponent<NetworkIdentity>().connectionToClient.connectionId);                
-        // }
     }
 
     public override void OnRoomClientExit()
@@ -80,7 +72,7 @@ public class MyNetworkManager : NetworkRoomManager
         base.OnClientConnect();
         Debug.Log("On Client Connect");
         PlayerListView = GameObject.FindGameObjectWithTag("PlayerList").transform;
-        NetworkClient.AddPlayer();
+        // NetworkClient.AddPlayer();
     }
 
     public override void OnServerDisconnect(NetworkConnection conn)
@@ -90,8 +82,15 @@ public class MyNetworkManager : NetworkRoomManager
         Debug.Log("Server disconnect");
     }
 
+    public override void OnClientDisconnect()
+    {
+        base.OnClientDisconnect();
+        Debug.Log("Client disconnected");
+    }
+
     public void ChangeScene(string sceneName)
     {
         ServerChangeScene(sceneName);
     }
+
 }

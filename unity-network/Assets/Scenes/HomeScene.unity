@@ -862,7 +862,7 @@ GameObject:
   - component: {fileID: 532462914}
   m_Layer: 0
   m_Name: NetworkManager
-  m_TagString: Untagged
+  m_TagString: NetworkManager
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -947,7 +947,6 @@ MonoBehaviour:
   clientIndex: 0
   PlayerListView: {fileID: 851307846}
   PlayerCardPrefab: {fileID: 7852068091929511914, guid: 72de495792c334369ba5e7772f8c51df, type: 3}
-  gManager: {fileID: 0}
 --- !u!114 &532462914
 MonoBehaviour:
   m_ObjectHideFlags: 0

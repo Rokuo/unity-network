@@ -43,7 +43,7 @@ public class GameManager : NetworkBehaviour
     IEnumerator TransitionCoroutine(Player winner)
     {
         TMP_Text text = GameObject.FindGameObjectWithTag("UI").GetComponentInChildren<TMP_Text>();
-        text.GetComponent<StatusWinner>().SetWinnerText(winner.name);
+        text.GetComponent<StatusWinner>().SetWinnerText(winner.name + " wins this round.");
         yield return new WaitForSeconds(3f);
         text.GetComponent<StatusWinner>().SetWinnerText(string.Empty);
         GameObject.FindWithTag("NetworkManager").GetComponent<MyNetworkManager>().ChangeScene(GetNextSceneName());
@@ -57,6 +57,15 @@ public class GameManager : NetworkBehaviour
             Debug.Log("Spawn pos: " + positions[i]);
             players[i].SetDefaults(positions[i]);
         }
+    }
+
+    IEnumerator TransitionEndGame(Player winner)
+    {
+        TMP_Text text = GameObject.FindGameObjectWithTag("UI").GetComponentInChildren<TMP_Text>();
+        text.GetComponent<StatusWinner>().SetWinnerText(winner.name + " wins the game.");
+        yield return new WaitForSeconds(3f);
+        text.GetComponent<StatusWinner>().SetWinnerText(string.Empty);
+        GameObject.FindWithTag("NetworkManager").GetComponent<MyNetworkManager>().ChangeScene("LobbyScene");
     }
 
     private void CheckDeathPlayer()
@@ -75,8 +84,13 @@ public class GameManager : NetworkBehaviour
         if (numberPlayerAlive == 1) {
             // update score of the winner
             players[indexWinner].SetPlayerScore();
-            // trigger change scene
-            StartCoroutine(TransitionCoroutine(players[indexWinner]));
+            if (players[indexWinner].score == 1) {
+                // back to home
+                StartCoroutine(TransitionEndGame(players[indexWinner]));
+            } else {
+                // trigger change scene
+                StartCoroutine(TransitionCoroutine(players[indexWinner]));
+            }
         }
     }
 

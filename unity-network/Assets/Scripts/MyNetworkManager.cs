@@ -80,7 +80,9 @@ public class MyNetworkManager : NetworkRoomManager
     public override bool OnRoomServerSceneLoadedForPlayer(NetworkConnection conn, GameObject roomPlayer, GameObject gamePlayer)
     {
         Debug.Log($"SceneLoadedForPlayer {GameObject.FindGameObjectsWithTag("SpawnPoints").Length}");
-        GameObject.FindWithTag("GameManager").GetComponent<GameManager>().AddNewPlayer(gamePlayer.GetComponent<Player>());
+        Player player = gamePlayer.GetComponent<Player>();
+        player.DisplayName = roomPlayer.GetComponent<MyNetworkRoomPlayer>().displayName;
+        GameObject.FindWithTag("GameManager").GetComponent<GameManager>().AddNewPlayer(player);
         return base.OnRoomServerSceneLoadedForPlayer(conn, roomPlayer, gamePlayer);
     }
 

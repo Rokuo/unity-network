@@ -44,7 +44,7 @@ public class GameManager : NetworkBehaviour
     IEnumerator TransitionCoroutine(Player winner)
     {
         TMP_Text text = GameObject.FindGameObjectWithTag("UI").GetComponentInChildren<TMP_Text>();
-        text.GetComponent<StatusWinner>().SetWinnerText(winner.name);
+        text.GetComponent<StatusWinner>().SetWinnerText(winner.DisplayName);
         yield return new WaitForSeconds(3f);
         text.GetComponent<StatusWinner>().SetWinnerText(string.Empty);
         GameObject.FindWithTag("NetworkManager").GetComponent<MyNetworkManager>().ChangeScene(GetNextSceneName());
@@ -63,7 +63,7 @@ public class GameManager : NetworkBehaviour
     IEnumerator TransitionEndGame(Player winner)
     {
         TMP_Text text = GameObject.FindGameObjectWithTag("UI").GetComponentInChildren<TMP_Text>();
-        text.GetComponent<StatusWinner>().SetWinnerText(winner.name + " wins the game.");
+        text.GetComponent<StatusWinner>().SetWinnerText(winner.DisplayName + " wins the game.");
         yield return new WaitForSeconds(3f);
         text.GetComponent<StatusWinner>().SetWinnerText(string.Empty);
         GameObject.FindWithTag("NetworkManager").GetComponent<MyNetworkManager>().StopHost();

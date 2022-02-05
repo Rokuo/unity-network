@@ -8,7 +8,13 @@ public class Player : NetworkBehaviour
 {
     [SerializeField] TMP_Text displayHealthText = null;
     [SerializeField] private int maxHealth = 100;
+    [SerializeField] private string displayName = null;
     public event Action OnDeath;
+
+    public string DisplayName {
+        get { return displayName; }
+        set { displayName = value; }
+    }
 
     [SyncVar(hook = nameof(HandleHealthUpdate))]
     private int currentHealth;
